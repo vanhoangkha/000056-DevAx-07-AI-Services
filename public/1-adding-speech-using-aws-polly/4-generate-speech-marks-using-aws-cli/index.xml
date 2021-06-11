@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tạo speech marks bằng AWS CLI on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <link>/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/</link>
+    <description>Recent content in Tạo speech marks bằng AWS CLI on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
