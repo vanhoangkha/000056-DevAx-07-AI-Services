@@ -4,6 +4,10 @@
     <title>Phát hành Lex chat bot on DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
     <link>/vi/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/</link>
     <description>Recent content in Phát hành Lex chat bot on DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/vi/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

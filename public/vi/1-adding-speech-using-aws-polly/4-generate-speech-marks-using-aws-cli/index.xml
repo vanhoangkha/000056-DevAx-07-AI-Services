@@ -4,6 +4,10 @@
     <title>Tạo speech marks bằng AWS CLI on DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
     <link>/vi/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/</link>
     <description>Recent content in Tạo speech marks bằng AWS CLI on DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/vi/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/vi/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

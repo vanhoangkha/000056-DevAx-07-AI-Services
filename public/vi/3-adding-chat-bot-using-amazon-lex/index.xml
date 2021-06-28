@@ -5,6 +5,10 @@
     <link>/vi/3-adding-chat-bot-using-amazon-lex/</link>
     <description>Recent content in Thêm chat bot bằng Amazon Lex on DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Jan 1970 07:33:41 +0700</lastBuildDate><atom:link href="/vi/3-adding-chat-bot-using-amazon-lex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 1970 07:33:41 +0700</lastBuildDate>
+    
+	<atom:link href="/vi/3-adding-chat-bot-using-amazon-lex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
