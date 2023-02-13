@@ -30,7 +30,7 @@ Now that we have a working Lambda function, we can update our Lex bot so that it
 
 ![Lex](/images/3/31.png?width=90pc)
 
-15. Click **Test**, enter `I want to fly from Melbourne to Sydney` to `Input a message`.
+15. Click **Test**, enter `I want to fly from Melbourne to Sydney` to `Type a message`.
 16. The bot will respond *When do you want to fly?* Type `Tomorrow`.
 17. The bot will respond *Are you sure you want to find flights to Sydney?* Type `Yes`.
 18. The bot will respond *I have 1 flight from Melbourne to Sydney - 1 January 2018* or a similar message - perhaps there is more than one flight available, and perhaps the date is different - populating the DynamoDB table is randomised.

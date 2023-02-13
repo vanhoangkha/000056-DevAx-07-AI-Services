@@ -29,7 +29,7 @@ Bây giờ chúng ta có một hàm Lambda đang hoạt động, chúng ta có t
 
 ![Lex](/images/3/31.png?width=90pc)
 
-15. Ấn **Test**, enter `I want to fly from Melbourne to Sydney` to `Input a message`.
+15. Ấn **Test**, enter `I want to fly from Melbourne to Sydney` to `Type a message`.
 16. Bot sẽ trả lời lại *When do you want to fly?* Nhập `Tomorrow`.
 17. Bot sẽ trả lời *Are you sure you want to find flights to Sydney?* Nhập `Yes`.
 18. Bot sẽ trả lời *I have 1 flight from Melbourne to Sydney - 1 January 2018* hoặc tương tự - có thể là nhiều hơn 1 chuyến bay hoặc có thể khác thời gian.
