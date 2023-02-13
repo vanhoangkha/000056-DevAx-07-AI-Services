@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/1-adding-speech-using-aws-polly/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -15,11 +14,9 @@
                 hreflang="en"
                 href="/1-adding-speech-using-aws-polly/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -30,51 +27,7 @@
                 hreflang="en"
                 href="/"
                 />
-  </url>
-  
-  <url>
-    <loc>/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/"
-                />
-  </url>
-  
-  <url>
-    <loc>/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/"
-                />
-  </url>
-  
-  <url>
-    <loc>/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/</loc>
     <xhtml:link
                 rel="alternate"
@@ -86,11 +39,33 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/"
+                />
+  </url><url>
+    <loc>/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/"
+                />
+  </url><url>
     <loc>/2-adding-object-recognition-using-aws-rekognition/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -101,23 +76,7 @@
                 hreflang="en"
                 href="/2-adding-object-recognition-using-aws-rekognition/"
                 />
-  </url>
-  
-  <url>
-    <loc>/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/</loc>
     <xhtml:link
                 rel="alternate"
@@ -129,11 +88,33 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/"
+                />
+  </url><url>
+    <loc>/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/"
+                />
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -144,23 +125,7 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/"
                 />
-  </url>
-  
-  <url>
-    <loc>/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/</loc>
     <xhtml:link
                 rel="alternate"
@@ -172,23 +137,19 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/"
                 />
-  </url>
-  
-  <url>
-    <loc>/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/</loc>
+  </url><url>
+    <loc>/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/"
+                href="/vi/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/"
+                href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/</loc>
     <xhtml:link
                 rel="alternate"
@@ -200,11 +161,9 @@
                 hreflang="en"
                 href="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/4-challenge/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -215,9 +174,7 @@
                 hreflang="en"
                 href="/4-challenge/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/</loc>
     <xhtml:link
                 rel="alternate"
@@ -229,9 +186,19 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/"
+                />
+  </url><url>
     <loc>/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/</loc>
     <xhtml:link
                 rel="alternate"
@@ -243,11 +210,9 @@
                 hreflang="en"
                 href="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/5-conclusion/</loc>
-    <lastmod>1970-01-01T07:33:41+07:00</lastmod>
+    <lastmod>1970-01-01T08:33:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -258,9 +223,7 @@
                 hreflang="en"
                 href="/5-conclusion/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/</loc>
     <xhtml:link
                 rel="alternate"
@@ -272,9 +235,7 @@
                 hreflang="en"
                 href="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/</loc>
     <xhtml:link
                 rel="alternate"
@@ -286,9 +247,7 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/</loc>
     <xhtml:link
                 rel="alternate"
@@ -300,9 +259,7 @@
                 hreflang="en"
                 href="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -314,9 +271,7 @@
                 hreflang="en"
                 href="/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -329,5 +284,4 @@
                 href="/tags/"
                 />
   </url>
-  
 </urlset>

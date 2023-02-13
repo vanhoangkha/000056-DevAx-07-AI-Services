@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chuẩn bị môi trường on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <title>Preparation on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
     <link>/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/</link>
-    <description>Recent content in Chuẩn bị môi trường on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <description>Recent content in Preparation on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 +++
 title = "Trải nghiệm các dịch vụ Amazon AI"
-date = 2021
+date = 2023
 weight = 1
 chapter = false
 +++

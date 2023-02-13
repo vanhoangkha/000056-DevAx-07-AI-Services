@@ -1,16 +1,21 @@
 +++
-title = "Chuẩn bị môi trường"
+title = "Preparing the environment"
 weight = 1
 chapter = false
 pre = "<b>1.1. </b>"
 +++
 
 #### Cài đặt DynamoDB
-Chúng ta cần điền thông tin vào DynamoDB table sẽ sử dụng trong suốt bài thực hành. Thông tin này sẽ được sử dụng để tính số lượng chuyến đi giữa các thành phố khác nhau.
-1. Tải tập tin **populate_tripsector.sh** sau xuống máy ảo Windows
+We need to populate a DynamoDB table with information that will be used during the lab. This information will be used to calculate trips between different cities.
+
+Only complete this step after your Windows eclipse environment has been set up.
+
+1. Download the following file to your Windows Eclipse environment
+
 {{%attachments /%}}
-2. Thực thi dòng lệnh sau trong command line
+
+2. Execute the following in your Windows Eclipse Environment. You will need to use git bash that has been included in your installation.
 ```bash
 populate_tripsector.sh <AWS_REGION>
 ```
-3. Mở DynamoDB trong bảng điều khiển và kiểm tra TravelBuddyTripSectors và xác nhận nó có 50 dòng được thêm vào table.
+3. Open the DynamoDB service in the console and check the table TravelBuddyTripSectors table and confirm there are 50 rows in the table.

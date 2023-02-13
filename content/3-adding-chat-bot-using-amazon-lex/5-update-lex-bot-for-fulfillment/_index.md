@@ -1,21 +1,38 @@
 +++
-title = "Phát hành Lex chat bot"
-weight = 6
+title = "Update The Lex Bot To Use Lambda For Fulfillment"
+weight = 5
 chapter = false
-pre = "<b>3.6. </b>"
+pre = "<b>3.5. </b>"
 +++
 
-Bây giờ chúng ta đã có một bot đang hoạt động, chúng ta có thể xuất bản nó để nó có thể được gọi bằng trang web TravelBuddy.
-1. Trong Lex console, chọn **Publish** ở đầu trang
-2. Đặt alias cho bot là **prod**
-![Lex](/images/3/33.png?width=90pc)
-3. Chọn **Publish**. Sẽ mất một vài phút để bot được phát hành. Trong hộp thoại xuất hiện khi quá trình phát hành kết thúc, chỉ cần đóng hộp thoại.
-4. Bây giờ bạn đã sẵn sàng để kiểm tra bot trò chuyện TravelBuddy. Mở trang web TravelBuddy trong trình duyệt.
+Now that we have a working Lambda function, we can update our Lex bot so that it uses the Lambda function for fulfillment, rather than returning the elicited slot details to the caller.
 
+1. On the AWS Console in the browser, click Services and type lex and then press enter.
+2. Select **TravelBuddyChatBot** 
+3. Select **TravelBuddyCheckFlightsIntent** intent if it doesn’t automatically select.
+4. Click **Test**
+5. Click the settings icon.
+6. In **Lambda function - optional** section, select **TripSearchLexBot** function for **Source**.
+7. Select **$LATEST** version.
+8. Click **Save**
 
-Trang web TravelBuddy quen thuộc sẽ hiển thị trong trình duyệt của bạn. Như trước đây, bạn sẽ thấy danh sách Đặc biệt của Hotel Specials and Flight Specials được hiển thị trên trang và tùy chọn **Find trips to…** cũng có sẵn. Ngoài ra còn có tùy chọn **Chat with us!**. Nhấp vào và cửa sổ bot trò chuyện sẽ xuất hiện:
-1. Nhập truy vấn của bạn - ví dụ: I want to fly from Sydney to Melbourne
-2. Bot sẽ trả lời **When do you want to fly?** nhập **Tomorrow**
-3. Bot sẽ trả lời **Are you sure you want to find flights to Melbourne?** Nhập **Yes.**
-4. Bot sẽ trả lời **I have 1 flight from Melbourne to Sydney - 1 January 2018** hoặc tương tự - có thể là nhiều hơn 1 chuyến bay hoặc có thể khác thời gian.
-![Bot In Web](/images/3/34.png?width=90pc)
+![Lambda](/images/3/29.png?width=90pc)
+
+9. In **Fulfullment** section, expand the **On successful fulfillment**
+10. Then click **Advanced options**
+11. Check to **Use a Lambda function for fulfillment** check box.
+12. Click **Update options**
+
+![Lambda](/images/3/30.png?width=90pc)
+
+13. Click **Actice** of **Fulfillment** section
+14. Click **Save intent**, then click **Build** to re-build the your intent
+
+![Lex](/images/3/31.png?width=90pc)
+
+15. Click **Test**, enter `I want to fly from Melbourne to Sydney` to `Input a message`.
+16. The bot will respond *When do you want to fly?* Type `Tomorrow`.
+17. The bot will respond *Are you sure you want to find flights to Sydney?* Type `Yes`.
+18. The bot will respond *I have 1 flight from Melbourne to Sydney - 1 January 2018* or a similar message - perhaps there is more than one flight available, and perhaps the date is different - populating the DynamoDB table is randomised.
+
+![Lex](/images/3/32.png?width=90pc)

@@ -1,25 +1,29 @@
 +++
-title = "Trải nghiệm các dịch vụ Amazon AI"
-date = 2021
+title = "Experience Amazon AI services"
+date = 2023
 weight = 1
 chapter = false
 +++
-# Trải nghiệm các dịch vụ Amazon AI
+# Experience Amazon AI services
 
-Trong bài thực hành này, chúng ta sẽ khám phá các dịch vụ của Amazon AI - Lex, Polly và Rekognition - và tương tác với thế giới thực bằng cách sử dụng ngôn ngữ tự nhiên, nhận diện giọng nói và hình ảnh. Trong các bài thực hành trước, chúng ta đã tạo một ứng dụng web monolithic *TravelBuddy* và tái cấu trúc nó thành một ứng dụng single-page web được quản lý trên Amazon S3 bucket và chia tách các phần tử dữ liệu khác nhau thành các microsevice, cho phép người dùng truy vấn các chuyến bay trong hệ thống dựa vào thành phố đi và thành phố đến thông qua văn bản. Trong bài thực hành này, chúng ta sẽ tiến một bước xa hơn, cung cấp một chat bot, cho phép người dùng sử dụng ngôn ngữ tự nhiên để truy vấn trong cửa sổ chat, và tương tác với công cụ tìm kiếm như thể họ đang trò chuyện với con người.
+In this lab, we will explore the Amazon AI services - Lex, Polly and Rekognition - and interact with the real-world using natural language, speech and visual recognition. In a previous lab, we liberated our monolithic *TravelBuddy* website and re-architected it as a single-page web application hosted in an Amazon S3 bucket, and separated out various data elements as microservices, to allow the user to query flights in the system based on simple text entry for origin or destination city. In this lab, we will take this one step further, and provide a chat bot implementation, that will allow our users to use natural language queries in a chat window, and interact with the search engine as if they were having a conversation with a person.
 
-Chúng ta sẽ tìm hiểu cách sử dụng Java SDK để tổng hợp giọng nói bằng Amazon Polly và sử dụng AWS CLI để tạo giọng nói và các điểm đánh dấu giọng nói để thúc đẩy hình ảnh hoặc phụ đề.
+We’ll explore how to use the Java SDK to synthesise speech using Amazon Polly, and also use the AWS CLI to generate speech and speech markers that can be used to drive animations or captions.
 
-Chúng ta cũng sẽ xem xét cách sử dụng Amazon Rekognition để thực hiện trích xuất các chứng năng và phân loại các đối tượng trong hình ảnh và sử dụng tính năng nhận diện khuôn mặt của  Rekognition để tạo mô hình hệ thống theo dõi người.
+We’ll also take a look at how we can use Amazon Rekognition to perform feature extraction and classification of objects in images, and use Rekognition’s facial recognition features to create a mock-up of a people-tracking system.
 
-#### Nội dung
-Sau khi hoàn thành bài thực hành, bạn sẽ có thể:
-- Sử dụng Java SDK để tương tác với Amazon AI Services
-- Triển khai ứng dụng web tương tác với Amazon Lex và Amazon Rekognition
-- Tạo bài phát biểu sống động bằng Amazon Polly
-- Sử dụng các dịch vụ và tính năng AWS khác nhau cùng nhau để tạo hệ thống - chẳng hạn như sử dụng S3 trigger để chạy các hàm Lambda sử dụng Rekognition, DynamoDB và S3 cùng nhau
+#### Topics Covered
 
-#### Yêu cầu về kiến thức kỹ thuật
-Để thực hiện thành công bài thực hành, bạn phải quen thuộc với AWS Management Console và sử dụng được trình soạn thảo để chỉnh sửa script.
-#### Môi trường thực hành
-Bài thực hành này sẽ sử dụng các tài nguyên đã được tạo và cấu hình từ Module 6.
+By the end of this lab, you will be able to:
+- Use the Java SDK to interact with the Amazon AI Services
+- Implement web applications that interact with Amazon Lex and Amazon Rekognition
+- Generate life-like speech using Amazon Polly
+- Use various AWS services and features together to create systems - such as using S3 triggers to run Lambda functions that make use of Rekognition, DynamoDB and S3 together
+
+#### Technical Knowledge Prerequisites
+
+To successfully complete this lab, you should be familiar with basic navigation of the AWS Management Console and be comfortable editing scripts using a text editor.
+
+#### Practice environment
+
+This exercise will use the resources created and configured from Module 6.

@@ -1,10 +1,11 @@
 +++
-title = "Thêm chat bot bằng Amazon Lex"
-date = 2021
+title = "Adding A Chat Bot Using Amaxon Lex"
+date = 2023
 weight = 3
 chapter = false
 pre = "<b>3. </b>"
 +++
 
-Trong bài tập này, bạn sẽ triển khai trang web TravelBuddy như một Single Page web Application (SPA) trên S3. Bạn sẽ triển khai một chatbot mà người dùng đã đăng ký có thể sử dụng đối thoại bằng ngôn ngữ tự nhiên để tìm thông tin về chuyến bay bằng cách sử dụng Amazon Lex.
-Amazon Lex là một dịch vụ xây dựng giao diện trò chuyện cho bất kỳ ứng dụng nào bằng giọng nói và văn bản. Amazon Lex cung cấp các chức năng học sâu nâng cao của nhận dạng giọng nói tự động (ASR) để chuyển đổi giọng nói thành văn bản và hiểu ngôn ngữ tự nhiên (NLU) để nhận ra ý định của văn bản, cho phép bạn xây dựng các ứng dụng với trải nghiệm người dùng hấp dẫn cao và trò chuyện như thật các tương tác. Với Amazon Lex, các công nghệ học sâu tương tự hỗ trợ Amazon Alexa hiện đã có sẵn cho bất kỳ nhà phát triển nào, cho phép bạn nhanh chóng và dễ dàng xây dựng các bot hội thoại (“chatbots”), ngôn ngữ tự nhiên, tinh vi.
+In this exercise, you will deploy the TravelBuddy website as a Single Page web Application (SPA) on S3. You will then implement a chatbot that registered users can use to have natural-language dialogue with your microservices in order to find information about flights using Amazon Lex.
+
+Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).

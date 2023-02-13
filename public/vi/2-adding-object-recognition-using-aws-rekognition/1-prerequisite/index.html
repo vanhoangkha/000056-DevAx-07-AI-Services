@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Chuẩn bị môi trường :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -648,7 +648,7 @@
         
         ">
       <a href="/vi/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Kết luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -835,52 +850,148 @@
 
 	<h4 id="tạo-cognito-identity-pool">Tạo Cognito Identity Pool</h4>
 <ol>
-<li>Truy cập Amazon Cognito, chọn <strong>Manage Identity Pools</strong>
-<img src="/images/2/1.png?width=90pc" alt="Cognito"></li>
-<li>Chọn <strong>Create new identity pool</strong>
-<img src="/images/2/2.png?width=90pc" alt="Cognito"></li>
-<li>Tại trường <strong>Identity pool name</strong> nhập <strong>FaceRecognition</strong>. Đánh dấu chọn tại 2 checkbox Unauthenticated identities và Authentication flow setting.
-<img src="/images/2/3.png?width=90pc" alt="Cognito"></li>
-<li>Chọn <strong>Create Pool</strong></li>
-<li>Tại trường <strong>Identity the IAM roles to use with your new identity pool</strong>, chọn <strong>Allow</strong>
-<img src="/images/2/4.png?width=90pc" alt="Cognito"></li>
-<li>Sao chép Identity pool ID, chúng ta sẽ sử dụng thông số này ở các bước sau
-<img src="/images/2/5.png?width=90pc" alt="Cognito"></li>
+<li>Truy cập Amazon Cognito, chọn <strong>Federated identities</strong></li>
 </ol>
+<p><img src="/images/2/1.png?width=90pc" alt="Cognito"></p>
+<ol start="2">
+<li>Chọn <strong>Create new identity pool</strong></li>
+</ol>
+<p><img src="/images/2/2.png?width=90pc" alt="Cognito"></p>
+<ol start="3">
+<li>Tại trường <strong>Identity pool name</strong> nhập <strong>FaceRecognition</strong>. Đánh dấu chọn tại 2 checkbox <em>Unauthenticated identities</em> và <em>Authentication flow setting</em>.</li>
+<li>Chọn <strong>Create Pool</strong></li>
+</ol>
+<p><img src="/images/2/3.png?width=90pc" alt="Cognito"></p>
+<ol start="5">
+<li>Tại trường <strong>Identity the IAM roles to use with your new identity pool</strong>, chọn <strong>Allow</strong></li>
+</ol>
+<p><img src="/images/2/4.png?width=90pc" alt="Cognito"></p>
+<ol start="6">
+<li>Sao chép Identity pool ID, chúng ta sẽ sử dụng thông số này ở các bước sau</li>
+</ol>
+<p><img src="/images/2/5.png?width=90pc" alt="Cognito"></p>
 <h4 id="tạo-dynamodb-table">Tạo DynamoDB table</h4>
 <ol start="7">
 <li>Truy cập AWS DynamoDB, chọn <strong>Create table</strong>.</li>
 <li>Tại mục <strong>Table name</strong> nhập <strong>facerecognition</strong></li>
-<li>Tại mục <strong>Primary key</strong> nhập <strong>faceId</strong>
-<img src="/images/2/6.png?width=90pc" alt="Cognito"></li>
+<li>Tại mục <strong>Primary key</strong> nhập <strong>faceId</strong>.</li>
 </ol>
+<p><img src="/images/2/6.png?width=90pc" alt="Cognito"></p>
+<ul>
+<li>Sau đó kéo xuống cuối trang và ấn <strong>Create table</strong>.</li>
+</ul>
+<p><img src="/images/2/7.png?width=90pc" alt="Cognito"></p>
 <h4 id="tạo-s3-bucket">Tạo S3 bucket</h4>
 <ol start="10">
-<li>Chúng ta sẽ tạo 2 S3 bucket, một bucket <strong>m7www</strong> chứa mã nguồn trang web và một bucket <strong>facerecognitions3bucket</strong> chứa dữ liệu hình ảnh để nhận diện
-<img src="/images/2/7.png?width=90pc" alt="Cognito"></li>
+<li>Chúng ta sẽ tạo 2 S3 bucket, một bucket <strong>m7www</strong> chứa mã nguồn trang web và một bucket <strong>facerecognitions3bucket</strong> chứa dữ liệu hình ảnh để nhận diện.</li>
 </ol>
+<p><img src="/images/2/8.png?width=90pc" alt="Cognito"></p>
+<p><img src="/images/2/9.png?width=90pc" alt="Cognito"></p>
+
+<div class="notices note" ><p>Bỏ chọn <strong>Block Public Access settings for this bucket</strong></p>
+</div>
+
 <h4 id="tạo-rekognition-collection">Tạo Rekognition Collection</h4>
 <ol start="11">
-<li>Sử dụng câu lệnh CLI sau để tạo collection <strong>iDevelopKnownFaces</strong>
-<code>bash aws rekognition create-collection --collection-id iDevelopKnownFaces</code>
-<img src="/images/2/8.png?width=90pc" alt="Cognito"></li>
+<li>Sử dụng câu lệnh CLI sau để tạo collection <strong>iDevelopKnownFaces</strong>:</li>
 </ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws rekognition create-collection --collection-id iDevelopKnownFaces
+</span></span></code></pre></div><p><img src="/images/2/10.png?width=90pc" alt="Cognito"></p>
 <h4 id="cấp-quyền-cho-cognito">Cấp quyền cho Cognito</h4>
 <ol start="12">
-<li>Truy cập Amazon IAM, chọn Role, tìm theo từ khóa Cognito ta sẽ thấy 2 Role Cognito_FaceRecognitionAuth_Role và Cognito_FaceRecognitionUnauth_Role của Cognito Identity Pool mà ta đã tạo ở bước trên, ta sẽ chỉnh sửa policy của 2 Role này.
-<img src="/images/2/9.png?width=90pc" alt="Cognito"></li>
-<li>Chọn Cognito_FaceRecognitionUnauth_Role, tại mục Permision, chọn oneClick_Cognito_Cognito_FaceRecognitionAuth_Role_xxxxxxxx, chọn <strong>Edit policy</strong>
-<img src="/images/2/10.png?width=90pc" alt="Edit policy"></li>
-<li>Sao chép và dán đoạn sau vào tab JSON
-<code>{ &quot;Version&quot;: &quot;2012-10-17&quot;, &quot;Statement&quot;: [ { &quot;Sid&quot;: &quot;VisualEditor0&quot;, &quot;Effect&quot;: &quot;Allow&quot;, &quot;Action&quot;: [ &quot;rekognition:DetectLabels&quot;, &quot;mobileanalytics:PutEvents&quot;, &quot;cognito-sync:*&quot;, &quot;cognito-identity:*&quot; ], &quot;Resource&quot;: &quot;*&quot; }, { &quot;Sid&quot;: &quot;VisualEditor1&quot;, &quot;Effect&quot;: &quot;Allow&quot;, &quot;Action&quot;: [ &quot;s3:PutObject&quot;, &quot;rekognition:CreateCollection&quot;, &quot;rekognition:DeleteCollection&quot;, &quot;rekognition:IndexFaces&quot;, &quot;dynamodb:Scan&quot;, &quot;dynamodb:Query&quot;, &quot;dynamodb:UpdateItem&quot;, &quot;rekognition:SearchFacesByImage&quot; ], &quot;Resource&quot;: [ &quot;arn:aws:s3:::facerecognitions3bucket/*&quot;, &quot;arn:aws:dynamodb:ap-northeast-1:340879421878:table/facerecognition&quot;, &quot;arn:aws:rekognition:ap-northeast-1:340879421878:collection/iDevelopKnownFaces&quot; ] } ] }  </code>
-<img src="/images/2/11.png?width=90pc" alt="Edit policy"></li>
-<li>Chọn <strong>Review Policy</strong> và chọn <strong>Save changes</strong>
-<img src="/images/2/8%5C12.png?width=90pc" alt="Edit policy"></li>
-<li>Thực hiện tương tự với <strong>Cognito_FaceRecognitionAuth_Role</strong>
-<code>{ &quot;Version&quot;: &quot;2012-10-17&quot;, &quot;Statement&quot;: [ { &quot;Sid&quot;: &quot;VisualEditor0&quot;, &quot;Effect&quot;: &quot;Allow&quot;, &quot;Action&quot;: [ &quot;rekognition:DetectLabels&quot;, &quot;mobileanalytics:PutEvents&quot;, &quot;cognito-sync:*&quot;, &quot;cognito-identity:*&quot; ], &quot;Resource&quot;: &quot;*&quot; }, { &quot;Sid&quot;: &quot;VisualEditor1&quot;, &quot;Effect&quot;: &quot;Allow&quot;, &quot;Action&quot;: [ &quot;s3:PutObject&quot;, &quot;rekognition:CreateCollection&quot;, &quot;rekognition:DeleteCollection&quot;, &quot;rekognition:IndexFaces&quot;, &quot;dynamodb:Scan&quot;, &quot;dynamodb:Query&quot;, &quot;dynamodb:UpdateItem&quot;, &quot;rekognition:SearchFacesByImage&quot; ], &quot;Resource&quot;: [ &quot;arn:aws:s3:::facerecognitions3bucket/*&quot;, &quot;arn:aws:dynamodb:ap-northeast-1:340879421878:table/facerecognition&quot;, &quot;arn:aws:rekognition:ap-northeast-1:340879421878:collection/iDevelopKnownFaces&quot; ] } ] }</code>
-<img src="/images/2/13.png?width=90pc" alt="Edit policy">
-<img src="/images/2/14.png?width=90pc" alt="Edit policy"></li>
+<li>Truy cập Amazon IAM, chọn Role, tìm theo từ khóa <code>Cognito</code> ta sẽ thấy 2 Role Cognito_FaceRecognitionAuth_Role và Cognito_FaceRecognitionUnauth_Role của Cognito Identity Pool mà ta đã tạo ở bước trên, ta sẽ chỉnh sửa policy của 2 Role này.</li>
 </ol>
+<p><img src="/images/2/11.png?width=90pc" alt="Cognito"></p>
+<ol start="13">
+<li>Chọn <em>Cognito_FaceRecognitionUnauth_Role</em>, tại mục Permision, chọn <em>oneClick_Cognito_Cognito_FaceRecognitionAuth_Role_xxxxxxxx</em>, chọn <strong>Edit policy</strong></li>
+</ol>
+<p><img src="/images/2/12.png?width=90pc" alt="Edit policy"></p>
+<ol start="14">
+<li>Sao chép và dán đoạn sau vào tab JSON</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Statement&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;VisualEditor0&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:DetectLabels&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;mobileanalytics:PutEvents&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;cognito-sync:*&#34;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#e6db74">&#34;cognito-identity:*&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;*&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;VisualEditor1&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;s3:PutObject&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:CreateCollection&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:DeleteCollection&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:IndexFaces&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:Scan&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:Query&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:UpdateItem&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:SearchFacesByImage&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Resource&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:s3:::facerecognitions3bucket/*&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:dynamodb:&lt;YOUR_REGION&gt;:&lt;ACCOUNT_ID&gt;:table/facerecognition&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:rekognition:&lt;YOUR_REGION&gt;:&lt;ACCOUNT_ID&gt;:collection/iDevelopKnownFaces&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}  
+</span></span></code></pre></div><ol start="15">
+<li>Chọn <strong>Review Policy</strong>.</li>
+</ol>
+<p><img src="/images/2/13.png?width=90pc" alt="Edit policy"></p>
+<ul>
+<li>Sau đó ấn <strong>Save changes</strong>.</li>
+</ul>
+<p><img src="/images/2/14.png?width=90pc" alt="Edit policy"></p>
+<ol start="16">
+<li>Thực hiện tương tự với <strong>Cognito_FaceRecognitionAuth_Role</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Statement&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;VisualEditor0&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:DetectLabels&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;mobileanalytics:PutEvents&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;cognito-sync:*&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;cognito-identity:*&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;*&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;VisualEditor1&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Action&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;s3:PutObject&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:CreateCollection&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:DeleteCollection&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:IndexFaces&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:Scan&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:Query&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;dynamodb:UpdateItem&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;rekognition:SearchFacesByImage&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;Resource&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:s3:::facerecognitions3bucket/*&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:dynamodb:&lt;YOUR_REGION&gt;:&lt;ACCOUNT_ID&gt;:table/facerecognition&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;arn:aws:rekognition:&lt;YOUR_REGION&gt;:&lt;ACCOUNT_ID&gt;:collection/iDevelopKnownFaces&#34;</span>
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img src="/images/2/15.png?width=90pc" alt="Edit policy"></p>
+<p><img src="/images/2/16.png?width=90pc" alt="Edit policy"></p>
 
 
 
@@ -1272,19 +1383,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

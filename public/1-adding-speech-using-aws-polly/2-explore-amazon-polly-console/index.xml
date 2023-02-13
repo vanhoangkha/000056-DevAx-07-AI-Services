@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Khám phá Amazon Polly on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <title>Explore the Amazon Polly Console on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
     <link>/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/</link>
-    <description>Recent content in Khám phá Amazon Polly on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <description>Recent content in Explore the Amazon Polly Console on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

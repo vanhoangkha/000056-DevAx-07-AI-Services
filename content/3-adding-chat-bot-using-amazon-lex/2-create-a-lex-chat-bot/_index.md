@@ -1,66 +1,92 @@
 +++
-title = "Tạo một chat box lex cho travelbuddy"
+title = "Create a Lex Chat Bot For TravelBuddy"
 weight = 2
 chapter = false
 pre = "<b>3.2. </b>"
 +++
 
-Bây giờ chúng ta đã thiết lập và chạy TravelBuddy, đã đến lúc thêm một chat bot vào trang web để cho phép người dùng tìm các chuyến bay bằng cách sử dụng tương tác tự nhiên với bot. Trong phần này, chúng ta sẽ tạo một bot đơn giản với mục đích tìm các chuyến bay đến một điểm đến. Chúng ta sẽ cải tiến chat bot này ở các phần sau.
+Now we have TravelBuddy up and running, it is time to add a chat bot to the site to allow users to find flights using a natural interaction with a bot. In this section, we will create a simple bot with an intent to find flights to a destination. We will enhance this as we move ahead.
 
-1. Trên Bảng điều khiển AWS trong trình duyệt, nhấp vào **Services** và nhập **lex** rồi nhấn enter.
-2. Nhấp vào **Get Started**
-![Lex](/images/3/9.png?width=90pc)
-3. Nhấp vào **Custom bot**
+1. On the AWS Console in the browser, click Services and type lex and then press enter.
+2. Click **Get Started**
+
 ![Lex](/images/3/10.png?width=90pc)
-4. Đối với **Bot name** nhập *TravelBuddyChatBot*
-5. Đối với **Language** chọn *English (US)*
-6. Đối với **Output Voice** chọn *Joanna*
-7. Đối với **Session timeout** nhập *5* và chọn *minutes*
-8. Đối với **Sentiment analysis** chọn *No*
-9.  Đối với **COPPA*** chọn *No*
-10. Với **Confidence score threshold** đặt như mặc định
-11. Chọn **Create** để tạo Lex bot mới
+
+3. Click **Custom bot**
+4. For **Bot name** type `TravelBuddyChatBot`
+5. In **IAM Permissions** section, select **Create a role with basic Amazon Lex permissions.**
+
 ![Lex](/images/3/11.png?width=90pc)
-12. Chọn **Create Intent**. 
+
+6. For **COPPA*** select *No*
+7. For **Session timeout** type `5` and select *minutes*
+8. Click **Next**
+
 ![Lex](/images/3/12.png?width=90pc)
-14. Trong hộp thoại vừa xuất hiện, chọn **Create intent**
+
+9. For **Language** select *English (US)*
+10. For **Output Voice** select *Joanna*. For **Confidence score threshold** leave the default value
+11. Click **Done** to create your new Lex bot
+
 ![Lex](/images/3/13.png?width=90pc)
-15. Nhập tên **TravelBuddyCheckFlightsIntent**
-16. Chọn **Add**
+
+12. Give the new intent the name **TravelBuddyCheckFlightsIntent**
+13. Click **Save Intent**
+
 ![Lex](/images/3/14.png?width=90pc)
-17. Với **Sample utterances** nhập ```I would like to fly to {destinationCity}```
-18. Chọn icon **+**
-Theo cách này, chúng ta đã nhúng một tham số vị trí có tên là **DestinationCity**. Bây giờ chúng ta cần khai báo tên tên này trong phần **Slots**.
-17. Trong **Slots**, với **Name** nhập **destinationCity**
-18. Với **Slot type** chọn **AMAZON.US_CITY**
+
+14. For **Sample utterances** type `I would like to fly to {destinationCity}`
+15. Click **Add utterances**
+
 ![Lex](/images/3/15.png?width=90pc)
-19. Với **Prompt** nhập **What city would you like to fly to?**. Chọn biểu tượng **+** để thêm slot
-Bây giờ chúng ta cần xác định **Confirmation prompt** được sử dụng để xác nhận thông tin mà người dùng muốn.
-21. Mở rộng trường **Confirmation prompt** và đánh dấu chọn **Confirmation prompt**.
-22. Trong mục **Confirm** nhập **Are you sure you want to find flights to {destinationCity}?**
-23. Trong mục **Cancel** nhập **No problem, you can try again later**
-24. Chọn **Save intent**
+
+In this utterance, we have embedded a slot parameter called **destinationCity**. We now need to declare this slot name in the **Slots** section.
+
+16. In the **Slots** section, click **Add slot**.
+17. For **Name** type `destinationCity`.
+18. For **Slot type** select **AMAZON.City**.
+19. For **Prompt** type **What city would you like to fly to?**. Then click **Add**.
+
 ![Lex](/images/3/16.png?width=90pc)
-#### Kiểm tra bot
-25. Trong phần đầu trang, chọn **Build**
+
+We now need to define a **Confirmation** which will be used to confirm with the user that they want to proceed with the fulfillment of the bot, once all the slots are filled.
+
+21. Expand the **Confirmation** field and click to the **Active**.
+22. In **Confirm prompt** section, enter `Are you sure you want to find flights to {destinationCity}?`
+23. In **Cancel**, enter `No problem, you can try again later`
+24. Click **Save intent**
+
 ![Lex](/images/3/17.png?width=90pc)
-26. Trong hộp thoại vừa xuất hiện, chọn **Build**
-Bot của bạn sẽ được build và sẵn sàng để kiểm tra
+
+#### Test the bot in the browser
+
+25. At the top of the page, click **Build**
+
 ![Lex](/images/3/18.png?width=90pc)
-27. Trong **Test Bot** ở panel bên phải, nhập **I would like to fly** trong trường **Chat to your bot**
-28. Bot sẽ trả lời *What city would you like to fly to?* Nhập **Sydney**
-29. Bot sẽ trả lời *Are you sure you want to find flights to Sydney?* Nhập **Yes**
-30. Bot sẽ phản hồi bằng cách trả lại các chi tiết về mục đích và các giá trị vị trí
+
+26. Your bot will now be built and in a few moments, it will be ready to test.
+27. Click **Test** to test, enter `I would like to fly` into the **Type a message** field.
+28. The bot will respond *What city would you like to fly to?* , type `Sydney`
+29. The bot will respond *Are you sure you want to find flights to Sydney?*, type `Yes`
+30. The bot will respond by returning the details of the intent and the slot values:
+
 ![Lex](/images/3/19.png?width=90pc)
-31. Hãy thử với vài biến thể, ví dụ **I want to go to Sydney**. Nếu bạn thử **I want to make a flight booking** bạn sẽ nhận được thông báo rằng bot không hiểu. 
+
+31. HTry a few other variations, for example `I want to go to Sydney`. If you try `I want to make a flight booking` you will notice that the bot doesn’t understand.
+
 ![Lex](/images/3/20.png?width=90pc)
-32. Yêu cầu mà bạn vừa gửi tới khác biệt so với câu nói mà bạn đã xác định. Bạn có thể khắc phục điều đó bằng cách thêm các câu nói mẫu bổ sung. Thêm một vài biến thể bổ sung cho bot của bạn trong phần **Sample utterances**, ví dụ như:
-    - I want to make a flight booking
-    - I want to make a booking
-    - I want to go to {destinationCity}
-    - What flights are available to {destinationCity}
-    - Is there a flight to {destinationCity}
-... và biến thể khác mà bạn có thể nghĩ ra.
-Notice: không thêm dấu câu vào các sample utterances
-32. Build lại bot bằng cách chọn **Build** và thử lại bằng các mẫu câu mà bạn đã thêm vào.
+
+32. The request is too different from the single utterance you have defined. You can fix that by adding additional sample utterances. Add a few additional variations to your bot in the **Sample utterances** section, such as:
+    - `I want to make a flight booking`
+    - `I want to make a booking`
+    - `I want to go to {destinationCity}`
+    - `What flights are available to {destinationCity}`
+    - `Is there a flight to {destinationCity}`
+
+… and any others you think should be added
+
+Notice: Do not add punctuation to the sample utterances.
+
+32. Re-build your bot by clicking **Build** and once built, try testing the bot with the variations you have added as sample utterances.
+
 ![Lex](/images/3/21.png?width=90pc)

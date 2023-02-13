@@ -7,8 +7,13 @@ pre = "<b>1.1. </b>"
 
 #### Cài đặt DynamoDB
 Chúng ta cần điền thông tin vào DynamoDB table sẽ sử dụng trong suốt bài thực hành. Thông tin này sẽ được sử dụng để tính số lượng chuyến đi giữa các thành phố khác nhau.
+
+Chỉ hoàn thành bước này sau khi môi trường nhật thực Windows của bạn đã được thiết lập.
+
 1. Tải tập tin **populate_tripsector.sh** sau xuống máy ảo Windows
+
 {{%attachments /%}}
+
 2. Thực thi dòng lệnh sau trong command line
 ```bash
 populate_tripsector.sh <AWS_REGION>

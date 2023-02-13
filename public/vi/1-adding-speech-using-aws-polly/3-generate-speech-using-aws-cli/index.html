@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo speech bằng AWS CLI :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -648,7 +648,7 @@
         
         ">
       <a href="/vi/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Kết luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -827,16 +842,43 @@
 
 	<ol>
 <li>Tải xuống tập tin <strong>pollySpeech.sh</strong></li>
+</ol>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/_index.vi.files/pollySpeech.sh" >
+					pollySpeech.sh
+				</a>
+				(0 KB)
+			</li>
+		
+	
+	<div>
+	
+</section>
+
+
+<ol start="2">
 <li>Mở terminal, <strong>cd</strong> tới thư mục chứa tập tin <strong>pollySpeech.sh</strong> vừa tải, thực thi câu lệnh sau:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x pollySpeech.sh
-./pollySpeech.sh
-</code></pre></div><p><img src="/images/1/8.png?width=90pc" alt="Polly">
-Đoạn script trên sẽ gọi Amazon Polly để sinh giọng nói và chạy lại nó sử dụng <strong>mpg123</strong>. Nếu bạn không cài đặt <strong>mpg123</strong> trong máy, bạn có thể cài đặt chúng bằng cách sử dụng <strong>Homebrew</strong>, hoặc sử dụng trình chơi nhạc MP khác tùy chọn của bạn. 
-Nếu sử dụng <strong>mpg123</strong>, bạn có thể tải xuống tại <a href="https://www.mpg123.de/download/win64/1.26.3/">link</a> và giải nén chúng.
-Mở Git Bash và chạy lệnh sau: 
-**export PATH=&quot;<!-- raw HTML omitted -->\mpg123-1.26.3-x86-64:$PATH&rdquo;
-**</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x pollySpeech.sh
+</span></span><span style="display:flex;"><span>./pollySpeech.sh
+</span></span></code></pre></div><p><img src="/images/1/8.png?width=90pc" alt="Polly"></p>
+<p>Đoạn script trên sẽ gọi Amazon Polly để sinh giọng nói và chạy lại nó sử dụng <strong>mpg123</strong>. Nếu bạn không cài đặt <strong>mpg123</strong> trong máy, bạn có thể cài đặt chúng bằng cách sử dụng <strong>Homebrew</strong>, hoặc sử dụng trình chơi nhạc MP khác tùy chọn của bạn.</p>
+<p>Nếu sử dụng <strong>mpg123</strong>, bạn có thể tải xuống tại <a href="https://www.mpg123.de/download/win64/1.26.3/">link</a> và giải nén chúng. Hoặc có thể mở <strong>PowerShall</strong> và chạy câu lệnh: <code>choco install mpg123</code>.</p>
+<p>Mở Git Bash và chạy lệnh sau:</p>
+<p><code>export PATH=&quot;&lt;filepath&gt;\mpg123-1.26.3-x86-64:$PATH&quot;</code></p>
 
 
 
@@ -1228,19 +1270,19 @@ Mở Git Bash và chạy lệnh sau:
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

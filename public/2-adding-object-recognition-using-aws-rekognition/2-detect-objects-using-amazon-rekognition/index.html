@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Phát hiện đối tượng bằng Amazon Rekognition :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <title>Detect Objects Using Amazon Rekognition :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Thêm giọng nói sử dụng Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Adding Speech Using Amazon Polly" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/">
-          <b>1. </b>Thêm giọng nói sử dụng Amazon Polly
+          <b>1. </b>Adding Speech Using Amazon Polly
           
             <i class="fas fa-check read-icon"></i>
           
@@ -113,13 +113,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Preparing the environment" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/">
-          <b>1.1. </b>Chuẩn bị môi trường
+          <b>1.1. </b>Preparing the environment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -141,13 +141,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Khám phá Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Explore the Amazon Polly Console" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/">
-          <b>1.2. </b>Khám phá Amazon Polly
+          <b>1.2. </b>Explore the Amazon Polly Console
           
             <i class="fas fa-check read-icon"></i>
           
@@ -169,13 +169,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Tạo speech bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Generate Speech Using the AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/">
-          <b>1.3. </b>Tạo speech bằng AWS CLI
+          <b>1.3. </b>Generate Speech Using the AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -197,13 +197,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Tạo speech marks bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Generate Speech Marks By AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/">
-          <b>1.4. </b>Tạo speech marks bằng AWS CLI
+          <b>1.4. </b>Generate Speech Marks By AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -225,13 +225,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Tạo speech marks bằng AWS Polly SDK dành cho Java" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Generate Speech Using the AWS Polly SDK for Java" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/">
-          <b>1.5. </b>Tạo speech marks bằng AWS Polly SDK dành cho Java
+          <b>1.5. </b>Generate Speech Using the AWS Polly SDK for Java
           
             <i class="fas fa-check read-icon"></i>
           
@@ -260,13 +260,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Thêm nhận dạng đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Adding Pbject Reconition Using Amazon Rekognition" class="dd-item 
         parent
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/">
-          <b>2. </b>Thêm nhận dạng đối tượng bằng Amazon Rekognition
+          <b>2. </b>Adding Pbject Reconition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -291,13 +291,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/">
-          <b>2.1. </b>Chuẩn bị môi trường
+          <b>2.1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -319,13 +319,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Phát hiện đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Detect Objects Using Amazon Rekognition" class="dd-item 
         
         active
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/">
-          <b>2.2. </b>Phát hiện đối tượng bằng Amazon Rekognition
+          <b>2.2. </b>Detect Objects Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -347,13 +347,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Nhận diện khuôn mặt bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Facial Recognition Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/">
-          <b>2.3. </b>Nhận diện khuôn mặt bằng Amazon Rekognition
+          <b>2.3. </b>Facial Recognition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -375,13 +375,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Thử nghiệm ứng dụng tìm người" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Experimant With the People Finder Application" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/">
-          <b>2.3. </b>Thử nghiệm ứng dụng tìm người
+          <b>2.4. </b>Experimant With the People Finder Application
           
             <i class="fas fa-check read-icon"></i>
           
@@ -410,13 +410,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Thêm chat bot bằng Amazon Lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Adding A Chat Bot Using Amaxon Lex" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/">
-          <b>3. </b>Thêm chat bot bằng Amazon Lex
+          <b>3. </b>Adding A Chat Bot Using Amaxon Lex
           
             <i class="fas fa-check read-icon"></i>
           
@@ -441,13 +441,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Triển khai ứng dụng Travellbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Deploy the Travellbuddy application and APIs" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/">
-          <b>3.1. </b>Triển khai ứng dụng Travellbuddy
+          <b>3.1. </b>Deploy the Travellbuddy application and APIs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -469,13 +469,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Tạo một chat box lex cho travelbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Create a Lex Chat Bot For TravelBuddy" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/">
-          <b>3.2. </b>Tạo một chat box lex cho travelbuddy
+          <b>3.2. </b>Create a Lex Chat Bot For TravelBuddy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -497,13 +497,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Nâng cấp bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Enhance your bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/">
-          <b>3.3. </b>Nâng cấp bot
+          <b>3.3. </b>Enhance your bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -525,13 +525,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Tạo lamda handler cho bot lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Create A Lambda Handler For The Lex Bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/">
-          <b>3.4. </b>Tạo lamda handler cho bot lex
+          <b>3.4. </b>Create A Lambda Handler For The Lex Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -553,13 +553,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Update The Lex Bot To Use Lambda For Fulfillment" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.5. </b>Update The Lex Bot To Use Lambda For Fulfillment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -581,13 +581,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Publish The Lex Chat Bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.6. </b>Publish The Lex Chat Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -616,13 +616,13 @@
  
   
     
-    <li data-nav-id="/4-challenge/" title="Thử thách" class="dd-item 
+    <li data-nav-id="/4-challenge/" title="Challenge Exercises" class="dd-item 
         
         
         
         ">
       <a href="/4-challenge/">
-          <b>4. </b>Thử thách
+          <b>4. </b>Challenge Exercises
           
             <i class="fas fa-check read-icon"></i>
           
@@ -642,13 +642,13 @@
  
   
     
-    <li data-nav-id="/5-conclusion/" title="Kết luận" class="dd-item 
+    <li data-nav-id="/5-conclusion/" title="Conclusion" class="dd-item 
         
         
         
         ">
       <a href="/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -788,7 +803,7 @@
             
           
           
-            <a href='/'>Trải nghiệm các dịch vụ Amazon AI</a> > <a href='/2-adding-object-recognition-using-aws-rekognition/'>Thêm nhận dạng đối tượng bằng Amazon Rekognition</a> > Phát hiện đối tượng bằng Amazon Rekognition
+            <a href='/'>Experience Amazon AI services</a> > <a href='/2-adding-object-recognition-using-aws-rekognition/'>Adding Pbject Reconition Using Amazon Rekognition</a> > Detect Objects Using Amazon Rekognition
           
         
           
@@ -817,7 +832,7 @@
           
             <h1>
               
-              Phát hiện đối tượng bằng Amazon Rekognition
+              Detect Objects Using Amazon Rekognition
             </h1>
           
 
@@ -825,9 +840,10 @@
 
 
 
-	<p>Trong bài tập này, bạn sẽ tạo một ứng dụng dựa trên trình duyệt sử dụng webcam trên máy tính của bạn để &lsquo;xem&rsquo; hình ảnh và hiển thị nhãn cho các thuộc tính được phát hiện.</p>
+	<p>In this exercise, you will create a browser-based application that uses your computer’s webcam to ‘see’ images, and then displays the labels for the features that have been detected.</p>
 <ol>
-<li>Tải mã nguồn tập tin <strong>www.zip</strong> và giải nén.
+<li>Download the source code bundle from <strong>www.zip</strong> file and explode the zip file onto your filesystem. Or run the following code:</li>
+</ol>
 
 <section class="attachments ">
 	<label>
@@ -853,29 +869,73 @@
 	
 </section>
 
-</li>
-<li>Mở tập tin <em>config/config.js</em>, tìm và thay thế <strong>REPLACE_WITH_COGNITO_IDENTITY_POOL_ID</strong>, <strong>REPLACE_WITH_DETECTOR_UPLOAD_BUCKET</strong>, <strong>ddbTableName</strong> và <strong>region</strong> trong tập tin
-<img src="/images/2/15.png?width=90pc" alt="Rekonition"></li>
-<li>Lưu tập tin</li>
-<li>Sao chép nội dung của thư mục đã giải nén vào S3 bucket</li>
+
+<ol start="2">
+<li>Open the <em>config/config.js</em>file in a text editor such as Eclipse. Replace the following values with the value from <strong>CloudFormation Outputs</strong> tab:</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">aws s3 cp . s3://m7www --recursive --region ap-southeast-2 --profile aws-lab-env
-</code></pre></div><ol start="4">
-<li>Để có thể truy cập website, ta cần Make public các object có trong bucket.</li>
-<li>Truy cập bucket m7www, chọn tất cả các object trong bucket. Tại mục <strong>Actions</strong>, chọn <strong>Make public</strong>
-<img src="/images/2/16.png?width=90pc" alt="Make public"></li>
-<li>Chọn tiếp <strong>Make public</strong>
-<img src="/images/2/17.png?width=90pc" alt="Make public"></li>
-<li>Truy cập trang web với đường dẫn như sau:
-<code>https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html</code></li>
-<li>Bạn sẽ thấy một trang mới xuất hiện với 4 tùy chọn. Chọn vào tùy chọn đầu tiên <strong>Object Scanner</strong> 
-<img src="/images/2/18.png?width=90pc" alt="Object scanner"></li>
-<li>Khi trang tải xong, bạn sẽ thấy thông báo yêu cầu quyền sử dụng webcam của máy tính của bạn. Nếu bạn thấy lỗi xuất hiện, kiểm tra lại xem bạn có đang duyệt trang web một cách an toàn bằng HTTPS hay không.</li>
-<li>Chọn <strong>Start Rekognition</strong> để bắt đầu gửi hình ảnh tới Rekognition service.</li>
-<li>Trang sẽ kết nối bằng Amazon Cognito, sau đó đẩy hình ảnh từ webcam lên Rekognition. Trong trả về, trang sẽ hiển thị danh sách các đối tượng mà nó &lsquo;thấy&rsquo; trong hình ảnh.
-<img src="/images/2/19.png?width=90pc" alt="Object scanner"></li>
-<li>Thử đưa các hình ảnh khác nhau lên trước camera để xem sự thay đổi của danh sách đối tượng.</li>
-<li>Hãy xem lại mã nguồn triển khai trong demo này để đảm bảo rằng bạn hiểu được cách thức hoạt động của nó.</li>
+<table>
+<thead>
+<tr>
+<th>Text</th>
+<th>CloudFormation output value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REPLACE_WITH_COGNITO_IDENTITY_POOL_ID</td>
+<td>CognitoIdentityPoolId</td>
+</tr>
+<tr>
+<td>REPLACE_WITH_DETECTOR_UPLOAD_BUCKET</td>
+<td>S3BucketDetectorUploads</td>
+</tr>
+<tr>
+<td>REPLACE_WITH_YOUR_DYNAMO_DB_TABLE_NAME</td>
+<td>DynamoDBFaces</td>
+</tr>
+<tr>
+<td>REPLACE_WITH_YOUR_AWS_REGION</td>
+<td>Your current region</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/2/17.png?width=90pc" alt="Rekonition"></p>
+<ol start="3">
+<li>Save the file.</li>
+<li>Copy the contents of the folder you exploded the zip file into, to the S3 bucket that lab has created for you to host your website, using the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws s3 cp . s3://m7www --recursive --region &lt;YOUR-REGION&gt; --profile aws-lab-env
+</span></span></code></pre></div><ol start="5">
+<li>To be able to access the website, we need to <strong>Make public using ACL</strong> the objects in the bucket.</li>
+<li>Access <strong>m7www</strong> bucket, select <strong>Permissions</strong> tab. Scroll down to <strong>Access control list (ACL)</strong>, click <strong>bucket owner enforced</strong>.</li>
+</ol>
+<p><img src="/images/2/18.png?width=90pc" alt="Make public"></p>
+<ol start="7">
+<li>Select <strong>ACLs enabled</strong>, then click <strong>Save changes</strong></li>
+</ol>
+<p><img src="/images/2/19.png?width=90pc" alt="Make public"></p>
+<ol start="8">
+<li>Select <strong>Objects</strong> tab, then select all objects. Then click <strong>Actions | Make public using ACL</strong></li>
+</ol>
+<p><img src="/images/2/20.png?width=90pc" alt="Make public"></p>
+<ol start="9">
+<li>Visit the website with the following link:
+<code>https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html</code></li>
+<li>You will see a landing page with four options. Click the first option, <strong>Object Scanner</strong></li>
+</ol>
+<p><img src="/images/2/21.png?width=90pc" alt="Object scanner"></p>
+<ol start="11">
+<li>When the page loads, it will ask for permission to use the webcam on your computer. If you see an error instead, check that you are browsing to the site securely, using HTTPS.</li>
+<li>Select <strong>Start Rekognition</strong> button to start sending images to the Rekognition service.</li>
+</ol>
+<p><img src="/images/2/22.png?width=90pc" alt="Object scanner"></p>
+<ol start="13">
+<li>The page will connect using Amazon Cognito, and then push the webcam image to Rekognition. In response, the page will show a list of all the objects it can ‘see’ in the image.</li>
+</ol>
+<p><img src="/images/2/23.png?width=90pc" alt="Object scanner"></p>
+<ol start="14">
+<li>Try holding up different objects in front of the camera to see the list of objects detected change.</li>
+<li>Take a few minutes to look at the source code implementation of this demo to ensure you understand how it works.</li>
 </ol>
 
 
@@ -1258,10 +1318,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Chuẩn bị môi trường"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Preparation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Nhận diện khuôn mặt bằng Amazon Rekognition" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Facial Recognition Using Amazon Rekognition" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1271,19 +1331,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tạo lamda handler cho bot lex :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <title>Create A Lambda Handler For The Lex Bot :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Thêm giọng nói sử dụng Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Adding Speech Using Amazon Polly" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/">
-          <b>1. </b>Thêm giọng nói sử dụng Amazon Polly
+          <b>1. </b>Adding Speech Using Amazon Polly
           
             <i class="fas fa-check read-icon"></i>
           
@@ -113,13 +113,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Preparing the environment" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/">
-          <b>1.1. </b>Chuẩn bị môi trường
+          <b>1.1. </b>Preparing the environment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -141,13 +141,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Khám phá Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Explore the Amazon Polly Console" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/">
-          <b>1.2. </b>Khám phá Amazon Polly
+          <b>1.2. </b>Explore the Amazon Polly Console
           
             <i class="fas fa-check read-icon"></i>
           
@@ -169,13 +169,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Tạo speech bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Generate Speech Using the AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/">
-          <b>1.3. </b>Tạo speech bằng AWS CLI
+          <b>1.3. </b>Generate Speech Using the AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -197,13 +197,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Tạo speech marks bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Generate Speech Marks By AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/">
-          <b>1.4. </b>Tạo speech marks bằng AWS CLI
+          <b>1.4. </b>Generate Speech Marks By AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -225,13 +225,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Tạo speech marks bằng AWS Polly SDK dành cho Java" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Generate Speech Using the AWS Polly SDK for Java" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/">
-          <b>1.5. </b>Tạo speech marks bằng AWS Polly SDK dành cho Java
+          <b>1.5. </b>Generate Speech Using the AWS Polly SDK for Java
           
             <i class="fas fa-check read-icon"></i>
           
@@ -260,13 +260,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Thêm nhận dạng đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Adding Pbject Reconition Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/">
-          <b>2. </b>Thêm nhận dạng đối tượng bằng Amazon Rekognition
+          <b>2. </b>Adding Pbject Reconition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -291,13 +291,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/">
-          <b>2.1. </b>Chuẩn bị môi trường
+          <b>2.1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -319,13 +319,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Phát hiện đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Detect Objects Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/">
-          <b>2.2. </b>Phát hiện đối tượng bằng Amazon Rekognition
+          <b>2.2. </b>Detect Objects Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -347,13 +347,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Nhận diện khuôn mặt bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Facial Recognition Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/">
-          <b>2.3. </b>Nhận diện khuôn mặt bằng Amazon Rekognition
+          <b>2.3. </b>Facial Recognition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -375,13 +375,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Thử nghiệm ứng dụng tìm người" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Experimant With the People Finder Application" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/">
-          <b>2.3. </b>Thử nghiệm ứng dụng tìm người
+          <b>2.4. </b>Experimant With the People Finder Application
           
             <i class="fas fa-check read-icon"></i>
           
@@ -410,13 +410,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Thêm chat bot bằng Amazon Lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Adding A Chat Bot Using Amaxon Lex" class="dd-item 
         parent
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/">
-          <b>3. </b>Thêm chat bot bằng Amazon Lex
+          <b>3. </b>Adding A Chat Bot Using Amaxon Lex
           
             <i class="fas fa-check read-icon"></i>
           
@@ -441,13 +441,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Triển khai ứng dụng Travellbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Deploy the Travellbuddy application and APIs" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/">
-          <b>3.1. </b>Triển khai ứng dụng Travellbuddy
+          <b>3.1. </b>Deploy the Travellbuddy application and APIs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -469,13 +469,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Tạo một chat box lex cho travelbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Create a Lex Chat Bot For TravelBuddy" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/">
-          <b>3.2. </b>Tạo một chat box lex cho travelbuddy
+          <b>3.2. </b>Create a Lex Chat Bot For TravelBuddy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -497,13 +497,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Nâng cấp bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Enhance your bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/">
-          <b>3.3. </b>Nâng cấp bot
+          <b>3.3. </b>Enhance your bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -525,13 +525,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Tạo lamda handler cho bot lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Create A Lambda Handler For The Lex Bot" class="dd-item 
         
         active
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/">
-          <b>3.4. </b>Tạo lamda handler cho bot lex
+          <b>3.4. </b>Create A Lambda Handler For The Lex Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -553,13 +553,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Update The Lex Bot To Use Lambda For Fulfillment" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.5. </b>Update The Lex Bot To Use Lambda For Fulfillment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -581,13 +581,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Publish The Lex Chat Bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.6. </b>Publish The Lex Chat Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -616,13 +616,13 @@
  
   
     
-    <li data-nav-id="/4-challenge/" title="Thử thách" class="dd-item 
+    <li data-nav-id="/4-challenge/" title="Challenge Exercises" class="dd-item 
         
         
         
         ">
       <a href="/4-challenge/">
-          <b>4. </b>Thử thách
+          <b>4. </b>Challenge Exercises
           
             <i class="fas fa-check read-icon"></i>
           
@@ -642,13 +642,13 @@
  
   
     
-    <li data-nav-id="/5-conclusion/" title="Kết luận" class="dd-item 
+    <li data-nav-id="/5-conclusion/" title="Conclusion" class="dd-item 
         
         
         
         ">
       <a href="/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -788,7 +803,7 @@
             
           
           
-            <a href='/'>Trải nghiệm các dịch vụ Amazon AI</a> > <a href='/3-adding-chat-bot-using-amazon-lex/'>Thêm chat bot bằng Amazon Lex</a> > Tạo lamda handler cho bot lex
+            <a href='/'>Experience Amazon AI services</a> > <a href='/3-adding-chat-bot-using-amazon-lex/'>Adding A Chat Bot Using Amaxon Lex</a> > Create A Lambda Handler For The Lex Bot
           
         
           
@@ -817,7 +832,7 @@
           
             <h1>
               
-              Tạo lamda handler cho bot lex
+              Create A Lambda Handler For The Lex Bot
             </h1>
           
 
@@ -825,53 +840,182 @@
 
 
 
-	<p>Hiện tại, chat bot sẽ trả lại các vị trí được lấy ra từ người dùng, trở lại cho caller dưới dạng JSON payload. Thay vào đó, chúng ta muốn bot của mình thực hiện tìm kiếm thực tế trong cơ sở dữ liệu các chuyến đi và hiển thị các tùy chọn trở lại cho người dùng, nếu không, khách hàng của chúng ta (trình duyệt) sẽ cần thực hiện thêm một cuộc gọi đến back-end để tìm kiếm các chuyến đi. Mặc dù đó có thể là những gì bạn muốn làm trong một số tình huống, nhưng trong trường hợp này, chúng ta sẽ triển khai một hàm Lambda để thực hiện tất cả công việc đáp ứng yêu cầu và trả lại kết quả trong một lần truy cập.</p>
-<p>Trong bài tập này, chúng ta sẽ tạo một hàm Lambda được viết bằng NodeJS để thực hiện đầy đủ chức năng cho bot của chúng ta.</p>
+	<p>At the moment, the chat bot will return the slots elicited from the user, back to the caller in the form of a JSON payload. Instead, we want our bot to perform the actual search of the trips database, and present the options back to the user, otherwise, our client (the browser) would need to make an additional call to the back-end to search for trips. While that may be what you want to do in some situations, in this case, we will implement a Lambda function to do all the work of fulfilling the request, and returning the results in one hit.</p>
+<p>In this exercise, we will create a Lambda function written in NodeJS to perform the ‘fulfillment’ for our bot.</p>
 <ol>
-<li>Trong AWS Console, truy cập Lambda</li>
-<li>Chọn <strong>Create function</strong></li>
-<li>Chọn <strong>Author from scratch</strong></li>
-<li>Với <strong>Name</strong> nhập <strong>TripSearchLexBot</strong></li>
-<li>Với <strong>Runtime</strong> chọn <strong>Node.js 12.x</strong></li>
-<li>Mở rộng <strong>Change default execution role</strong></li>
-<li>Và chọn <strong>Existing role</strong> sau đó chọn <strong>LambdaRole</strong></li>
-<li>Chọn <strong>Create function</strong>
-<img src="/images/3/26.png?width=90pc" alt="Lambda"></li>
-<li>Tải tập tin <strong>lambda-lexbothandler.js</strong> và sao chép nội dung của tập tin.</li>
-<li>Trong Lambda console, dán nội dung đã sao chép từ tập tin <strong>lambda-lexbothandler.js</strong> vào trường code entry, thay thế các nội dung đã có sẵn
-<img src="/images/3/27.png?width=90pc" alt="Lambda"></li>
-<li>Chọn <strong>Deploy</strong> và <strong>Test</strong></li>
-<li>Hộp thoại <strong>Configure test event</strong> sẽ xuất hiện. Thay thế nội dung của test event bằng đoạn JSON sau đây:</li>
+<li>On the AWS Console in the browser, click <strong>Service</strong>s and type <strong>lambda</strong> and then press enter.</li>
+<li>Click <strong>Create function</strong>*</li>
+<li>For <strong>Name</strong> type <strong>TripSearchLexBot</strong></li>
+<li>For <strong>Runtime</strong> select <strong>Node.js 12.x</strong></li>
+<li>Expand <strong>Change default execution role</strong></li>
+<li>Select <strong>Existing role</strong>, then select <strong>LambdaRole</strong></li>
+<li>Click <strong>Create function</strong></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSON" data-lang="JSON">{
-  <span style="color:#f92672">&#34;currentIntent&#34;</span>: {
-    <span style="color:#f92672">&#34;slots&#34;</span>: {
-      <span style="color:#f92672">&#34;originCity&#34;</span>: <span style="color:#e6db74">&#34;Melbourne&#34;</span>,
-      <span style="color:#f92672">&#34;destinationCity&#34;</span>: <span style="color:#e6db74">&#34;Sydney&#34;</span>,
-      <span style="color:#f92672">&#34;Date&#34;</span>: <span style="color:#e6db74">&#34;2017-12-31&#34;</span>
-    },
-    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyCheckFlightsIntent&#34;</span>,
-    <span style="color:#f92672">&#34;confirmationStatus&#34;</span>: <span style="color:#e6db74">&#34;None&#34;</span>
-  },
-  <span style="color:#f92672">&#34;bot&#34;</span>: {
-    <span style="color:#f92672">&#34;alias&#34;</span>: <span style="color:#e6db74">&#34;$LATEST&#34;</span>,
-    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;$LATEST&#34;</span>,
-    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyChatBot&#34;</span>
-  },
-  <span style="color:#f92672">&#34;userId&#34;</span>: <span style="color:#e6db74">&#34;Adam&#34;</span>,
-  <span style="color:#f92672">&#34;invocationSource&#34;</span>: <span style="color:#e6db74">&#34;Fulfillment&#34;</span>,
-  <span style="color:#f92672">&#34;outputDialogMode&#34;</span>: <span style="color:#e6db74">&#34;Text&#34;</span>,
-  <span style="color:#f92672">&#34;messageVersion&#34;</span>: <span style="color:#e6db74">&#34;1.0&#34;</span>,
-  <span style="color:#f92672">&#34;sessionAttributes&#34;</span>: {}
-}
-</code></pre></div><ol start="13">
-<li>Với <strong>Event name</strong> nhập <strong>TripSearchLexTest</strong></li>
-<li>Chọn <strong>Create</strong>
-<img src="/images/3/28.png?width=90pc" alt="Lambda"></li>
-<li>Chọn <strong>Test</strong> để kiểm tra hàm Lambda vừa tạo. Sau một khoảng thời gian, bạn sẽ nhận được kết quả như sau:
-<img src="/images/3/29.png?width=90pc" alt="Lambda">
-Điều này cho thấy rằng hàm Lambda có thể đọc chính xác dữ liệu đầu vào và truy vấn bảng DynamoDB cho các chuyến bay từ Melbourne đến Sydney và trả về các kết quả phù hợp.</li>
-<li>Hãy dành một vài phút để xem lại mã hàm Lambda này, để bạn hiểu nó hoạt động như thế nào.</li>
+<p><img src="/images/3/25.png?width=90pc" alt="Lambda"></p>
+<ol start="8">
+<li>Download the source code from <strong>lambda-lexbothandler.js</strong> onto your filesystem, and open it in a text editor. Copy the entire contents of the file into your clipboard.</li>
+</ol>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Attachments
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			<li>
+				<a href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/_index.files/lambda-lexbothandler.js" >
+					lambda-lexbothandler.js
+				</a>
+				(11 KB)
+			</li>
+		
+	
+	<div>
+	
+</section>
+
+
+<ol start="9">
+<li>In the Lambda console, paste in the contents of the <strong>lambda-lexbothandler.js</strong> into the code entry field, replacing the existing contents.</li>
+<li>Click <strong>Deploy</strong> and <strong>Test</strong></li>
+</ol>
+<p><img src="/images/3/26.png?width=90pc" alt="Lambda"></p>
+<ol start="11">
+<li>The <strong>Configure test event</strong> dialog will appear, enter <strong>testcase</strong> for event name</li>
+<li>Replace the contents of the test event with the following JSON:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sessionId&#34;</span>: <span style="color:#e6db74">&#34;885078239936701&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inputTranscript&#34;</span>: <span style="color:#e6db74">&#34;Yes&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;interpretations&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;intent&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;slots&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;date&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Tomorrow&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;2023-02-10&#34;</span>
+</span></span><span style="display:flex;"><span>              ],
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;2023-02-10&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;destinationCity&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Sydney&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;melbourne&#34;</span>
+</span></span><span style="display:flex;"><span>              ],
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;Sydney&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;originCity&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Melbourne&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;sydney&#34;</span>
+</span></span><span style="display:flex;"><span>              ],
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;Melbourne&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;confirmationState&#34;</span>: <span style="color:#e6db74">&#34;Confirmed&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyCheckFlightsIntent&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;state&#34;</span>: <span style="color:#e6db74">&#34;ReadyForFulfillment&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;nluConfidence&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;intent&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;slots&#34;</span>: {},
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;confirmationState&#34;</span>: <span style="color:#e6db74">&#34;None&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;FallbackIntent&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;state&#34;</span>: <span style="color:#e6db74">&#34;ReadyForFulfillment&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sessionState&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;sessionAttributes&#34;</span>: {},
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;intent&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;slots&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;date&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Tomorrow&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;2023-02-10&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;2023-02-10&#34;</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;destinationCity&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Sydney&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;melbourne&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;Sydney&#34;</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;originCity&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;shape&#34;</span>: <span style="color:#e6db74">&#34;Scalar&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;value&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;originalValue&#34;</span>: <span style="color:#e6db74">&#34;Melbourne&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;resolvedValues&#34;</span>: [
+</span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;sydney&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;interpretedValue&#34;</span>: <span style="color:#e6db74">&#34;Melbourne&#34;</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;confirmationState&#34;</span>: <span style="color:#e6db74">&#34;Confirmed&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyCheckFlightsIntent&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;state&#34;</span>: <span style="color:#e6db74">&#34;ReadyForFulfillment&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;originatingRequestId&#34;</span>: <span style="color:#e6db74">&#34;033310c3-eb7e-44e7-8e44-db2b62acc310&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;responseContentType&#34;</span>: <span style="color:#e6db74">&#34;text/plain; charset=utf-8&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;invocationSource&#34;</span>: <span style="color:#e6db74">&#34;FulfillmentCodeHook&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;messageVersion&#34;</span>: <span style="color:#e6db74">&#34;1.0&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;transcriptions&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;resolvedContext&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;intent&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyCheckFlightsIntent&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;transcription&#34;</span>: <span style="color:#e6db74">&#34;Yes&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;resolvedSlots&#34;</span>: {},
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;transcriptionConfidence&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inputMode&#34;</span>: <span style="color:#e6db74">&#34;Text&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;bot&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;aliasId&#34;</span>: <span style="color:#e6db74">&#34;TSTALIASID&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;aliasName&#34;</span>: <span style="color:#e6db74">&#34;TestBotAlias&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;TravelBuddyChatBot&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;DRAFT&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;localeId&#34;</span>: <span style="color:#e6db74">&#34;en_US&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;0BTWXR7UVD&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img src="/images/3/27.png?width=90pc" alt="Lambda"></p>
+<ol start="13">
+<li>Click <strong>Create</strong></li>
+<li>Click <strong>Test</strong> to test the Lambda function with the test event. After a moment, you should see an output similar to this:</li>
+</ol>
+<p><img src="/images/3/28.png?width=90pc" alt="Lambda"></p>
+<p>This indicates that the Lambda function can correctly read the input data, and queried the DynamoDB table for flights from Melbourne to Sydney, and returned the matches.</p>
+<ol start="16">
+<li>Spend a few minutes reviewing this Lambda function code, so you understand how it works.</li>
 </ol>
 
 
@@ -1254,10 +1398,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Nâng cấp bot"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Enhance your bot"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Phát hành Lex chat bot" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Update The Lex Bot To Use Lambda For Fulfillment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1267,19 +1411,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

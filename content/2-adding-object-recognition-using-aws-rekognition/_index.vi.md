@@ -1,6 +1,6 @@
 +++
 title = "Thêm nhận dạng đối tượng bằng Amazon Rekognition"
-date = 2021
+date = 2023
 weight = 2
 chapter = false
 pre = "<b>2. </b>"

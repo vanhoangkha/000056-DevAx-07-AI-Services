@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Thêm chat bot bằng Amazon Lex :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
+    <title>Adding A Chat Bot Using Amaxon Lex :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Thêm giọng nói sử dụng Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/" title="Adding Speech Using Amazon Polly" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/">
-          <b>1. </b>Thêm giọng nói sử dụng Amazon Polly
+          <b>1. </b>Adding Speech Using Amazon Polly
           
             <i class="fas fa-check read-icon"></i>
           
@@ -113,13 +113,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/" title="Preparing the environment" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/1-install-prerequisite-tools/">
-          <b>1.1. </b>Chuẩn bị môi trường
+          <b>1.1. </b>Preparing the environment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -141,13 +141,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Khám phá Amazon Polly" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/" title="Explore the Amazon Polly Console" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/2-explore-amazon-polly-console/">
-          <b>1.2. </b>Khám phá Amazon Polly
+          <b>1.2. </b>Explore the Amazon Polly Console
           
             <i class="fas fa-check read-icon"></i>
           
@@ -169,13 +169,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Tạo speech bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/" title="Generate Speech Using the AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/3-generate-speech-using-aws-cli/">
-          <b>1.3. </b>Tạo speech bằng AWS CLI
+          <b>1.3. </b>Generate Speech Using the AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -197,13 +197,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Tạo speech marks bằng AWS CLI" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/" title="Generate Speech Marks By AWS CLI" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/4-generate-speech-marks-using-aws-cli/">
-          <b>1.4. </b>Tạo speech marks bằng AWS CLI
+          <b>1.4. </b>Generate Speech Marks By AWS CLI
           
             <i class="fas fa-check read-icon"></i>
           
@@ -225,13 +225,13 @@
  
   
     
-    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Tạo speech marks bằng AWS Polly SDK dành cho Java" class="dd-item 
+    <li data-nav-id="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/" title="Generate Speech Using the AWS Polly SDK for Java" class="dd-item 
         
         
         
         ">
       <a href="/1-adding-speech-using-aws-polly/5-generate-speech-using-aws-polly-java-sdk/">
-          <b>1.5. </b>Tạo speech marks bằng AWS Polly SDK dành cho Java
+          <b>1.5. </b>Generate Speech Using the AWS Polly SDK for Java
           
             <i class="fas fa-check read-icon"></i>
           
@@ -260,13 +260,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Thêm nhận dạng đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/" title="Adding Pbject Reconition Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/">
-          <b>2. </b>Thêm nhận dạng đối tượng bằng Amazon Rekognition
+          <b>2. </b>Adding Pbject Reconition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -291,13 +291,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Chuẩn bị môi trường" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/" title="Preparation" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/1-prerequisite/">
-          <b>2.1. </b>Chuẩn bị môi trường
+          <b>2.1. </b>Preparation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -319,13 +319,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Phát hiện đối tượng bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/" title="Detect Objects Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/2-detect-objects-using-amazon-rekognition/">
-          <b>2.2. </b>Phát hiện đối tượng bằng Amazon Rekognition
+          <b>2.2. </b>Detect Objects Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -347,13 +347,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Nhận diện khuôn mặt bằng Amazon Rekognition" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/" title="Facial Recognition Using Amazon Rekognition" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/3-facial-rekognition-using-amazon-rekognition/">
-          <b>2.3. </b>Nhận diện khuôn mặt bằng Amazon Rekognition
+          <b>2.3. </b>Facial Recognition Using Amazon Rekognition
           
             <i class="fas fa-check read-icon"></i>
           
@@ -375,13 +375,13 @@
  
   
     
-    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Thử nghiệm ứng dụng tìm người" class="dd-item 
+    <li data-nav-id="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Experimant With the People Finder Application" class="dd-item 
         
         
         
         ">
       <a href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/">
-          <b>2.3. </b>Thử nghiệm ứng dụng tìm người
+          <b>2.4. </b>Experimant With the People Finder Application
           
             <i class="fas fa-check read-icon"></i>
           
@@ -410,13 +410,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Thêm chat bot bằng Amazon Lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/" title="Adding A Chat Bot Using Amaxon Lex" class="dd-item 
         
         active
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/">
-          <b>3. </b>Thêm chat bot bằng Amazon Lex
+          <b>3. </b>Adding A Chat Bot Using Amaxon Lex
           
             <i class="fas fa-check read-icon"></i>
           
@@ -441,13 +441,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Triển khai ứng dụng Travellbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Deploy the Travellbuddy application and APIs" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/">
-          <b>3.1. </b>Triển khai ứng dụng Travellbuddy
+          <b>3.1. </b>Deploy the Travellbuddy application and APIs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -469,13 +469,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Tạo một chat box lex cho travelbuddy" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/" title="Create a Lex Chat Bot For TravelBuddy" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/">
-          <b>3.2. </b>Tạo một chat box lex cho travelbuddy
+          <b>3.2. </b>Create a Lex Chat Bot For TravelBuddy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -497,13 +497,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Nâng cấp bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/" title="Enhance your bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/3-enhance-your-bot/">
-          <b>3.3. </b>Nâng cấp bot
+          <b>3.3. </b>Enhance your bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -525,13 +525,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Tạo lamda handler cho bot lex" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/" title="Create A Lambda Handler For The Lex Bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/">
-          <b>3.4. </b>Tạo lamda handler cho bot lex
+          <b>3.4. </b>Create A Lambda Handler For The Lex Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -553,13 +553,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/" title="Update The Lex Bot To Use Lambda For Fulfillment" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/5-update-lex-bot-for-fulfillment/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.5. </b>Update The Lex Bot To Use Lambda For Fulfillment
           
             <i class="fas fa-check read-icon"></i>
           
@@ -581,13 +581,13 @@
  
   
     
-    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Phát hành Lex chat bot" class="dd-item 
+    <li data-nav-id="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/" title="Publish The Lex Chat Bot" class="dd-item 
         
         
         
         ">
       <a href="/3-adding-chat-bot-using-amazon-lex/6-publish-the-lex-bot/">
-          <b>3.6. </b>Phát hành Lex chat bot
+          <b>3.6. </b>Publish The Lex Chat Bot
           
             <i class="fas fa-check read-icon"></i>
           
@@ -616,13 +616,13 @@
  
   
     
-    <li data-nav-id="/4-challenge/" title="Thử thách" class="dd-item 
+    <li data-nav-id="/4-challenge/" title="Challenge Exercises" class="dd-item 
         
         
         
         ">
       <a href="/4-challenge/">
-          <b>4. </b>Thử thách
+          <b>4. </b>Challenge Exercises
           
             <i class="fas fa-check read-icon"></i>
           
@@ -642,13 +642,13 @@
  
   
     
-    <li data-nav-id="/5-conclusion/" title="Kết luận" class="dd-item 
+    <li data-nav-id="/5-conclusion/" title="Conclusion" class="dd-item 
         
         
         
         ">
       <a href="/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -784,7 +799,7 @@
             
           
           
-            <a href='/'>Trải nghiệm các dịch vụ Amazon AI</a> > Thêm chat bot bằng Amazon Lex
+            <a href='/'>Experience Amazon AI services</a> > Adding A Chat Bot Using Amaxon Lex
           
         
           
@@ -811,7 +826,7 @@
           
             <h1>
               
-              Thêm chat bot bằng Amazon Lex
+              Adding A Chat Bot Using Amaxon Lex
             </h1>
           
 
@@ -819,8 +834,8 @@
 
 
 
-	<p>Trong bài tập này, bạn sẽ triển khai trang web TravelBuddy như một Single Page web Application (SPA) trên S3. Bạn sẽ triển khai một chatbot mà người dùng đã đăng ký có thể sử dụng đối thoại bằng ngôn ngữ tự nhiên để tìm thông tin về chuyến bay bằng cách sử dụng Amazon Lex.
-Amazon Lex là một dịch vụ xây dựng giao diện trò chuyện cho bất kỳ ứng dụng nào bằng giọng nói và văn bản. Amazon Lex cung cấp các chức năng học sâu nâng cao của nhận dạng giọng nói tự động (ASR) để chuyển đổi giọng nói thành văn bản và hiểu ngôn ngữ tự nhiên (NLU) để nhận ra ý định của văn bản, cho phép bạn xây dựng các ứng dụng với trải nghiệm người dùng hấp dẫn cao và trò chuyện như thật các tương tác. Với Amazon Lex, các công nghệ học sâu tương tự hỗ trợ Amazon Alexa hiện đã có sẵn cho bất kỳ nhà phát triển nào, cho phép bạn nhanh chóng và dễ dàng xây dựng các bot hội thoại (“chatbots”), ngôn ngữ tự nhiên, tinh vi.</p>
+	<p>In this exercise, you will deploy the TravelBuddy website as a Single Page web Application (SPA) on S3. You will then implement a chatbot that registered users can use to have natural-language dialogue with your microservices in order to find information about flights using Amazon Lex.</p>
+<p>Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).</p>
 
 
 
@@ -1198,10 +1213,10 @@ Amazon Lex là một dịch vụ xây dựng giao diện trò chuyện cho bất
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Thử nghiệm ứng dụng tìm người"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/" title="Experimant With the People Finder Application"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Triển khai ứng dụng Travellbuddy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/" title="Deploy the Travellbuddy application and APIs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1211,19 +1226,19 @@ Amazon Lex là một dịch vụ xây dựng giao diện trò chuyện cho bất
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

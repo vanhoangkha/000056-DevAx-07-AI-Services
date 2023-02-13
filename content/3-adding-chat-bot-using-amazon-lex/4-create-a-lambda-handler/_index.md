@@ -1,54 +1,162 @@
 +++
-title = "Tạo lamda handler cho bot lex"
+title = "Create A Lambda Handler For The Lex Bot"
 weight = 4
 chapter = false
 pre = "<b>3.4. </b>"
 +++
 
-Hiện tại, chat bot sẽ trả lại các vị trí được lấy ra từ người dùng, trở lại cho caller dưới dạng JSON payload. Thay vào đó, chúng ta muốn bot của mình thực hiện tìm kiếm thực tế trong cơ sở dữ liệu các chuyến đi và hiển thị các tùy chọn trở lại cho người dùng, nếu không, khách hàng của chúng ta (trình duyệt) sẽ cần thực hiện thêm một cuộc gọi đến back-end để tìm kiếm các chuyến đi. Mặc dù đó có thể là những gì bạn muốn làm trong một số tình huống, nhưng trong trường hợp này, chúng ta sẽ triển khai một hàm Lambda để thực hiện tất cả công việc đáp ứng yêu cầu và trả lại kết quả trong một lần truy cập.
+At the moment, the chat bot will return the slots elicited from the user, back to the caller in the form of a JSON payload. Instead, we want our bot to perform the actual search of the trips database, and present the options back to the user, otherwise, our client (the browser) would need to make an additional call to the back-end to search for trips. While that may be what you want to do in some situations, in this case, we will implement a Lambda function to do all the work of fulfilling the request, and returning the results in one hit.
 
-Trong bài tập này, chúng ta sẽ tạo một hàm Lambda được viết bằng NodeJS để thực hiện đầy đủ chức năng cho bot của chúng ta.
-1. Trong AWS Console, truy cập Lambda
-2. Chọn **Create function**
-3. Chọn **Author from scratch**
-4. Với **Name** nhập **TripSearchLexBot**
-5. Với **Runtime** chọn **Node.js 12.x**
-6. Mở rộng **Change default execution role**
-7. Và chọn **Existing role** sau đó chọn **LambdaRole**
-8. Chọn **Create function**
+In this exercise, we will create a Lambda function written in NodeJS to perform the ‘fulfillment’ for our bot.
+
+1. On the AWS Console in the browser, click **Service**s and type **lambda** and then press enter.
+2. Click **Create function***
+3. For **Name** type **TripSearchLexBot**
+4. For **Runtime** select **Node.js 12.x**
+5. Expand **Change default execution role**
+6. Select **Existing role**, then select **LambdaRole**
+7. Click **Create function**
+
+![Lambda](/images/3/25.png?width=90pc)
+
+8. Download the source code from **lambda-lexbothandler.js** onto your filesystem, and open it in a text editor. Copy the entire contents of the file into your clipboard.
+
+{{%attachments /%}}
+
+9. In the Lambda console, paste in the contents of the **lambda-lexbothandler.js** into the code entry field, replacing the existing contents.
+10. Click **Deploy** and **Test**
+
 ![Lambda](/images/3/26.png?width=90pc)
-9.  Tải tập tin **lambda-lexbothandler.js** và sao chép nội dung của tập tin.
-10. Trong Lambda console, dán nội dung đã sao chép từ tập tin **lambda-lexbothandler.js** vào trường code entry, thay thế các nội dung đã có sẵn
-![Lambda](/images/3/27.png?width=90pc)
-11. Chọn **Deploy** và **Test**
-12. Hộp thoại **Configure test event** sẽ xuất hiện. Thay thế nội dung của test event bằng đoạn JSON sau đây:
+
+11. The **Configure test event** dialog will appear, enter **testcase** for event name
+12. Replace the contents of the test event with the following JSON:
 ```JSON
 {
-  "currentIntent": {
-    "slots": {
-      "originCity": "Melbourne",
-      "destinationCity": "Sydney",
-      "Date": "2017-12-31"
+  "sessionId": "885078239936701",
+  "inputTranscript": "Yes",
+  "interpretations": [
+    {
+      "intent": {
+        "slots": {
+          "date": {
+            "shape": "Scalar",
+            "value": {
+              "originalValue": "Tomorrow",
+              "resolvedValues": [
+                "2023-02-10"
+              ],
+              "interpretedValue": "2023-02-10"
+            }
+          },
+          "destinationCity": {
+            "shape": "Scalar",
+            "value": {
+              "originalValue": "Sydney",
+              "resolvedValues": [
+                "melbourne"
+              ],
+              "interpretedValue": "Sydney"
+            }
+          },
+          "originCity": {
+            "shape": "Scalar",
+            "value": {
+              "originalValue": "Melbourne",
+              "resolvedValues": [
+                "sydney"
+              ],
+              "interpretedValue": "Melbourne"
+            }
+          }
+        },
+        "confirmationState": "Confirmed",
+        "name": "TravelBuddyCheckFlightsIntent",
+        "state": "ReadyForFulfillment"
+      },
+      "nluConfidence": 1
     },
-    "name": "TravelBuddyCheckFlightsIntent",
-    "confirmationStatus": "None"
+    {
+      "intent": {
+        "slots": {},
+        "confirmationState": "None",
+        "name": "FallbackIntent",
+        "state": "ReadyForFulfillment"
+      }
+    }
+  ],
+  "sessionState": {
+    "sessionAttributes": {},
+    "intent": {
+      "slots": {
+        "date": {
+          "shape": "Scalar",
+          "value": {
+            "originalValue": "Tomorrow",
+            "resolvedValues": [
+              "2023-02-10"
+            ],
+            "interpretedValue": "2023-02-10"
+          }
+        },
+        "destinationCity": {
+          "shape": "Scalar",
+          "value": {
+            "originalValue": "Sydney",
+            "resolvedValues": [
+              "melbourne"
+            ],
+            "interpretedValue": "Sydney"
+          }
+        },
+        "originCity": {
+          "shape": "Scalar",
+          "value": {
+            "originalValue": "Melbourne",
+            "resolvedValues": [
+              "sydney"
+            ],
+            "interpretedValue": "Melbourne"
+          }
+        }
+      },
+      "confirmationState": "Confirmed",
+      "name": "TravelBuddyCheckFlightsIntent",
+      "state": "ReadyForFulfillment"
+    },
+    "originatingRequestId": "033310c3-eb7e-44e7-8e44-db2b62acc310"
   },
-  "bot": {
-    "alias": "$LATEST",
-    "version": "$LATEST",
-    "name": "TravelBuddyChatBot"
-  },
-  "userId": "Adam",
-  "invocationSource": "Fulfillment",
-  "outputDialogMode": "Text",
+  "responseContentType": "text/plain; charset=utf-8",
+  "invocationSource": "FulfillmentCodeHook",
   "messageVersion": "1.0",
-  "sessionAttributes": {}
+  "transcriptions": [
+    {
+      "resolvedContext": {
+        "intent": "TravelBuddyCheckFlightsIntent"
+      },
+      "transcription": "Yes",
+      "resolvedSlots": {},
+      "transcriptionConfidence": 1
+    }
+  ],
+  "inputMode": "Text",
+  "bot": {
+    "aliasId": "TSTALIASID",
+    "aliasName": "TestBotAlias",
+    "name": "TravelBuddyChatBot",
+    "version": "DRAFT",
+    "localeId": "en_US",
+    "id": "0BTWXR7UVD"
+  }
 }
 ```
-13. Với **Event name** nhập **TripSearchLexTest**
-14. Chọn **Create**
+
+![Lambda](/images/3/27.png?width=90pc)
+
+13. Click **Create**
+14. Click **Test** to test the Lambda function with the test event. After a moment, you should see an output similar to this:
+
 ![Lambda](/images/3/28.png?width=90pc)
-15. Chọn **Test** để kiểm tra hàm Lambda vừa tạo. Sau một khoảng thời gian, bạn sẽ nhận được kết quả như sau:
-![Lambda](/images/3/29.png?width=90pc)
-Điều này cho thấy rằng hàm Lambda có thể đọc chính xác dữ liệu đầu vào và truy vấn bảng DynamoDB cho các chuyến bay từ Melbourne đến Sydney và trả về các kết quả phù hợp.
-16.  Hãy dành một vài phút để xem lại mã hàm Lambda này, để bạn hiểu nó hoạt động như thế nào.
+
+This indicates that the Lambda function can correctly read the input data, and queried the DynamoDB table for flights from Melbourne to Sydney, and returned the matches.
+
+16.  Spend a few minutes reviewing this Lambda function code, so you understand how it works.

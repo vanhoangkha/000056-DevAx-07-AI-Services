@@ -1,0 +1,13 @@
+{"time":6,"type":"word","start":0,"end":4,"value":"Text"}
+{"time":6,"type":"viseme","value":"t"}
+{"time":56,"type":"viseme","value":"E"}
+{"time":123,"type":"viseme","value":"k"}
+{"time":202,"type":"viseme","value":"s"}
+{"time":243,"type":"viseme","value":"t"}
+{"time":275,"type":"word","start":5,"end":7,"value":"to"}
+{"time":275,"type":"viseme","value":"t"}
+{"time":320,"type":"viseme","value":"@"}
+{"time":370,"type":"word","start":8,"end":11,"value":"say"}
+{"time":370,"type":"viseme","value":"s"}
+{"time":510,"type":"viseme","value":"e"}
+{"time":787,"type":"viseme","value":"sil"}

@@ -1,6 +1,6 @@
 +++
 title = "Thêm giọng nói sử dụng Amazon Polly"
-date = 2021
+date = 2023
 weight = 1
 chapter = false
 pre = "<b>1. </b>"

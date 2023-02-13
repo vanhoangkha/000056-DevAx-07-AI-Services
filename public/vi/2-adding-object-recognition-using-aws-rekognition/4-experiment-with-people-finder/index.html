@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.101.0" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Thử nghiệm ứng dụng tìm người :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1624844089" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1624844089" rel="stylesheet">
-    <link href="/css/hybrid.css?1624844089" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1624844089" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1624844089" rel="stylesheet">
-    <link href="/css/auto-complete.css?1624844089" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1624844089" rel="stylesheet">
-    <link href="/css/theme.css?1624844089" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1624844089" rel="stylesheet">
+    <link href="/css/nucleus.css?1676255219" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676255219" rel="stylesheet">
+    <link href="/css/hybrid.css?1676255219" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676255219" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676255219" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676255219" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676255219" rel="stylesheet">
+    <link href="/css/theme.css?1676255219" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676255219" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1624844089" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1676255219" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1624844089"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676255219"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1624844089"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1624844089"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676255219"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676255219"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1624844089"></script>
+<script type="text/javascript" src="/js/search.js?1676255219"></script>
 
     
   </div>
@@ -648,7 +648,7 @@
         
         ">
       <a href="/vi/5-conclusion/">
-          <b>4. </b>Kết luận
+          <b>5. </b>Kết luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -747,6 +747,21 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>13-02-2023</font></i>
+</left>
+<left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -835,48 +850,181 @@
 
 	<p>People Finder được chia thành 2 phần: trang Master - nơi bạn có thể xóa bộ sưu tập các khuôn mặt được biết, thêm các khuôn mặt mưới và cũng có thể xem danh sách các khuôn mặt đã biết và lần cuối cùng khuôn mặt đó được nhận diện; trang thứ 2 là trang Detector  mô phỏng một camera từ xa có thể được đặt ở một vị trí cụ thể xung quanh ngôi nhà.</p>
 <ol>
-<li>Từ trang chủ website, chọn <strong>People Finder - Master</strong>
-<img src="/images/2/23.png?width=90pc" alt="Recognise Master"></li>
+<li>Từ trang chủ website, chọn <strong>People Finder - Master</strong></li>
+</ol>
+<p><img src="/images/2/27.png?width=90pc" alt="Recognise Master"></p>
+<ol start="2">
 <li>Nếu bạn đã thêm các khuôn mặt vào bộ sưu tập và bạn muốn giữ chúng, đừng chọn <strong>Clear Rekognition Collection</strong>. Nếu bạn muốn xóa tất cả các khuôn mặt đã biết, hãy nhấp vào <strong>Clear Rekognition Collection</strong></li>
 <li>Bạn có thể thêm các khuôn mặt mới vào bộ sưu tập bằng cách sử dụng bảng điều khiển <strong>Add face to Rekognition Collection</strong>. Nếu bạn đã có các khuôn mặt trong bộ sưu tập và không cần thêm các khuôn mặt khác, bạn có thể bỏ qua phần đó.</li>
 <li>Trong phần <strong>Faces detected</strong>, nhấp vào <strong>Start polling DynamoDB table</strong> để bắt đầu bộ đếm thời gian sẽ truy vấn DynamoDB để biết kết quả và hiển thị chúng trong danh sách.</li>
-<li>Sau một vài giây, danh sách sẽ bắt đầu tự động làm mới. Bạn sẽ thấy tên, tuổi, vị trí và cảm xúc của từng khuôn mặt và thời điểm chúng được phát hiện lần cuối. Vị trí, tình cảm và thời gian được phát hiện sẽ không hợp lệ tại thời điểm này, vì bạn chưa chạy ứng dụng dò tìm.
-<img src="/images/2/24.png?width=90pc" alt="Recognise Master"></li>
+<li>Sau một vài giây, danh sách sẽ bắt đầu tự động làm mới. Bạn sẽ thấy tên, tuổi, vị trí và cảm xúc của từng khuôn mặt và thời điểm chúng được phát hiện lần cuối. Vị trí, tình cảm và thời gian được phát hiện sẽ không hợp lệ tại thời điểm này, vì bạn chưa chạy ứng dụng dò tìm.</li>
 </ol>
+<p><img src="/images/2/28.png?width=90pc" alt="Recognise Master"></p>
 <h4 id="triển-khai-hàm-lambda-cho-bộ-xử-lý-dò-tìm">Triển khai hàm Lambda cho bộ xử lý dò tìm</h4>
 <ol start="6">
 <li>Tải mã nguồn tập tin <strong>DetectorImageProcessor-Skeleton.zip</strong> và giải nén.</li>
-<li>Mở project trong Eclipse IDE bằng cách sử dụng <strong>File|Open projects from filesystem&hellip;</strong></li>
-<li>Việc triển khai vẫn chưa hoàn tất. Bạn có một danh sách những việc cần làm như sau:
-<code>//************************************************************************************ // TODO: // // 1. Phát hiện khuôn mặt trong hình ảnh. Giả sử chỉ có một khuôn mặt được cung cấp //    Bạn có thể sử dụng hàm getImageUtil() đã được cung cấp để tạo một Image object phù hợp cho Rekognition // // 2. Với khuôn mặt đầu tiên trong danh sách kết quả, lấy bộ sưu tập cảm xúc.  Lặp lại bộ sưu tập và tạo một chuỗi chứa tất cả các cảm xúc hiện có. //    Nếu không có cảm xúc, hãy đặt một chuỗi cảm xúc là 'Indeterminate' //    Chỉ lấy cảm xúc có confidence factor&gt; 30 // // 3. Tìm Rekognition collection để tìm các kết quả phù hợp với khuôn mặt, sử dụng searchFacesByImage(). //    Sử dụng FACE_MATCH_THRESHOLD đã được cung cấp // // 4. Nếu bạn tìm thấy một kết quả phù hợp, hãy sử dụng faceId đó để cập nhật DynamoDB table. If you find a match, use the faceId of the match to update the DynamoDB table. // Vì thứ tự xử lý hình ảnh trong S3 là không xác định, bạn không nên cập nhật DynamoDB table nếu hình ảnh cũ hơn bản cập nhật cuối cùng lên DynamoDB.  //Bạn có thể sử dụng biến DiscoveryDate được trích xuất từ object metadata ở trên cho mục đích đó // //************************************************************************************</code>
-Bạn có thể sử dụng giải pháp đã được cập nhật đầy đủ tại tập tin sau</li>
 </ol>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Source code
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/_index.vi.files/DetectorImageProcessor-Skeleton.zip" >
+						DetectorImageProcessor-Skeleton.zip
+					</a>
+					(4 KB)
+				</li>
+			
+		
+	
+	<div>
+	
+</section>
+
+
+<ol start="7">
+<li>Mở project trong Eclipse IDE bằng cách sử dụng <strong>File | Open projects from filesystem&hellip;</strong></li>
+<li>Việc triển khai vẫn chưa hoàn tất. Bạn có một danh sách những việc cần làm như sau:</li>
+</ol>
+<pre tabindex="0"><code>//************************************************************************************
+// TODO:
+//
+// 1. Phát hiện khuôn mặt trong hình ảnh. Giả sử chỉ có một khuôn mặt được cung cấp
+//    Bạn có thể sử dụng hàm getImageUtil() đã được cung cấp để tạo một Image object phù hợp cho Rekognition
+//
+// 2. Với khuôn mặt đầu tiên trong danh sách kết quả, lấy bộ sưu tập cảm xúc.  Lặp lại bộ sưu tập và tạo một chuỗi chứa tất cả 
+//    các cảm xúc hiện có.
+//    Nếu không có cảm xúc, hãy đặt một chuỗi cảm xúc là &#39;Indeterminate&#39;
+//    Chỉ lấy cảm xúc có confidence factor &gt; 30
+//
+// 3. Tìm Rekognition collection để tìm các kết quả phù hợp với khuôn mặt, sử dụng searchFacesByImage().
+//    Sử dụng FACE_MATCH_THRESHOLD đã được cung cấp
+//
+// 4. Nếu bạn tìm thấy một kết quả phù hợp, hãy sử dụng faceId đó để cập nhật DynamoDB table. If you find a match, use 
+//    the faceId of the match to update the DynamoDB table.
+//    Vì thứ tự xử lý hình ảnh trong S3 là không xác định, bạn không nên cập nhật DynamoDB table nếu hình ảnh cũ hơn bản cập // 
+//    nhật cuối cùng lên DynamoDB. 
+//    Bạn có thể sử dụng biến DiscoveryDate được trích xuất từ object metadata ở trên cho mục đích đó
+//
+//************************************************************************************
+</code></pre><p>Bạn có thể sử dụng giải pháp đã được cập nhật đầy đủ tại tập tin sau:</p>
+
+<section class="attachments ">
+	<label>
+		<i class="fas fa-paperclip" aria-hidden="true"></i>
+		Source code
+	</label>
+	
+		
+	
+	<div class="attachments-files">
+	
+		
+		
+			
+		
+	
+		
+		
+			
+				<li>
+					<a href="/2-adding-object-recognition-using-aws-rekognition/4-experiment-with-people-finder/_index.vi.files/DetectorImageProcessor-Full.zip" >
+						DetectorImageProcessor-Full.zip
+					</a>
+					(7 KB)
+				</li>
+			
+		
+	
+		
+		
+			
+		
+	
+	<div>
+	
+</section>
+
+
 <h4 id="triển-khai-hàm-lambda-và-kích-hoạt-nó-khi-tải-lên-s3">Triển khai hàm Lambda và kích hoạt nó khi tải lên S3</h4>
 <ol start="9">
-<li>Truy cập AWS Lambda, chọn <strong>Create Function</strong>
-<img src="/images/2/25.png?width=90pc" alt="Lambda Function"></li>
-<li>Chọn <strong>Author from scratch</strong>, nhập tên Function là <strong>DetectorImageProcessor</strong>, chọn Runtime <strong>Java 8</strong>
-<img src="/images/2/26.png?width=90pc" alt="Lambda Function"></li>
-<li>Chọn <strong>Create function</strong></li>
-<li>Truy cập lambda function vừa tạo, tại mục Code, chọn <strong>Upload from|.zip or .jar file</strong>
-<img src="/images/2/27.png?width=90pc" alt="Lambda Function"></li>
-<li>Chọn tập tin <strong>DetectorImageProcessor-Full.zip</strong> và chọn <strong>Save</strong>
-<img src="/images/2/28.png?width=90pc" alt="Lambda Function"></li>
-<li>Tại mục <strong>Function overview</strong>, chọn <strong>Add trigger</strong>
-<img src="/images/2/29.png?width=90pc" alt="Lambda Function"></li>
-<li>Chọn <strong>S3</strong> và chọn bucket <strong>facerecognitionS3bucket</strong>
-<img src="/images/2/30.png?width=90pc" alt="Lambda Function"></li>
+<li>Truy cập AWS Lambda, chọn <strong>Create Function</strong></li>
 </ol>
+<p><img src="/images/2/29.png?width=90pc" alt="Lambda Function"></p>
+<ol start="10">
+<li>Chọn <strong>Author from scratch</strong>, nhập tên Function là <strong>DetectorImageProcessor</strong>, chọn Runtime <strong>Java 8</strong></li>
+<li>Chọn <strong>Create function</strong></li>
+</ol>
+<p><img src="/images/2/30.png?width=90pc" alt="Lambda Function"></p>
+<ol start="12">
+<li>Truy cập lambda function vừa tạo, tại mục Code, chọn <strong>Upload from|.zip file</strong></li>
+</ol>
+<p><img src="/images/2/31.png?width=90pc" alt="Lambda Function"></p>
+<ol start="13">
+<li>Chọn tập tin <strong>DetectorImageProcessor-Full.zip</strong> và chọn <strong>Save</strong></li>
+</ol>
+<p><img src="/images/2/32.png?width=90pc" alt="Lambda Function"></p>
+<ol start="14">
+<li>Tại mục <strong>Function overview</strong>, chọn <strong>Add trigger</strong></li>
+</ol>
+<p><img src="/images/2/33.png?width=90pc" alt="Lambda Function"></p>
+<ol start="15">
+<li>Chọn <strong>S3</strong> và chọn bucket <strong>facerecognitionS3bucket</strong></li>
+</ol>
+<p><img src="/images/2/34.png?width=90pc" alt="Lambda Function"></p>
 <h4 id="chạy-trang-detetor-để-phát-hiện-khuôn-mặt">Chạy trang detetor để phát hiện khuôn mặt</h4>
 <ol start="16">
 <li>Truy cập trang web đã tạo ở các bước trước, chọn <strong>People Finder - Detector</strong></li>
 <li>Chọn một vị trí từ danh sách - vị trí này là tùy ý, nhưng cho phép bạn chạy nhiều detector được chỉ định cho các vị trí khác nhau để bạn có thể theo dõi nơi ở của nhữung người trong bản demo.</li>
-<li>Nhấp vào <strong>Start webcam</strong>. Trang sẽ bắt đầu gửi hình ảnh đến S3 bucket, điều này sẽ kích hoạt chức năng Lambda để xử lý hình ảnh bằng cách sử dụng Rekognition và cập nhật bảng DynamoDB.
-<img src="/images/2/31.png?width=90pc" alt="Lambda Function">
-<img src="/images/2/32.png?width=90pc" alt="S3 bucket"></li>
-<li>Nếu bạn gặp lỗi trong quá trình thực hiện, hãy thử thêm CORS policy sau vào bucket facerecognitions3bucket
-<img src="/images/2/33.png?width=90pc" alt="CORS policy"></li>
+<li>Hãy thêm CORS policy sau vào bucket facerecognitions3bucket.</li>
 </ol>
+<pre tabindex="0"><code>[
+    {
+        &#34;AllowedHeaders&#34;: [
+            &#34;*&#34;
+        ],
+        &#34;AllowedMethods&#34;: [
+            &#34;PUT&#34;,
+            &#34;POST&#34;,
+            &#34;DELETE&#34;
+        ],
+        &#34;AllowedOrigins&#34;: [
+            &#34;https://m7www.s3.&lt;YOUR-REGION&gt;.amazonaws.com&#34;
+        ],
+        &#34;ExposeHeaders&#34;: [
+            &#34;x-amz-server-side-encryption&#34;,
+            &#34;x-amz-request-id&#34;,
+            &#34;x-amz-id-2&#34;
+        ],
+        &#34;MaxAgeSeconds&#34;: 3000
+    }
+]
+</code></pre><p><img src="/images/2/37.png?width=90pc" alt="CORS policy"></p>
+<ol start="19">
+<li>Nhấp vào <strong>Start webcam</strong>. Trang sẽ bắt đầu gửi hình ảnh đến S3 bucket, điều này sẽ kích hoạt chức năng Lambda để xử lý hình ảnh bằng cách sử dụng Rekognition và cập nhật bảng DynamoDB.</li>
+</ol>
+<p><img src="/images/2/35.png?width=90pc" alt="Lambda Function"></p>
+<p><img src="/images/2/36.png?width=90pc" alt="S3 bucket"></p>
 
 
 
@@ -1271,19 +1419,19 @@ Bạn có thể sử dụng giải pháp đã được cập nhật đầy đủ
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.min.js?1624844089"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1624844089"></script>
-    <script src="/js/jquery.sticky.js?1624844089"></script>
-    <script src="/js/featherlight.min.js?1624844089"></script>
-    <script src="/js/highlight.pack.js?1624844089"></script>
+    <script src="/js/clipboard.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676255219"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676255219"></script>
+    <script src="/js/jquery.sticky.js?1676255219"></script>
+    <script src="/js/featherlight.min.js?1676255219"></script>
+    <script src="/js/highlight.pack.js?1676255219"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1624844089"></script>
-    <script src="/js/learn.js?1624844089"></script>
-    <script src="/js/hugo-learn.js?1624844089"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676255219"></script>
+    <script src="/js/learn.js?1676255219"></script>
+    <script src="/js/hugo-learn.js?1676255219"></script>
 
-    <link href="/mermaid/mermaid.css?1624844089" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1624844089"></script>
+    <link href="/mermaid/mermaid.css?1676255219" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1676255219"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
