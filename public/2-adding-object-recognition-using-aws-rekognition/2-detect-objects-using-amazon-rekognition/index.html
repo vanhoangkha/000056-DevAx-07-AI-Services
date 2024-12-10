@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Detect Objects Using Amazon Rekognition :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -899,7 +899,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="/images/2/17.png?width=90pc" alt="Rekonition"></p>
+<p><img alt="Rekonition" src="/images/2/17.png?width=90pc"></p>
 <ol start="3">
 <li>Save the file.</li>
 <li>Copy the contents of the folder you exploded the zip file into, to the S3 bucket that lab has created for you to host your website, using the following command:</li>
@@ -909,30 +909,30 @@
 <li>To be able to access the website, we need to <strong>Make public using ACL</strong> the objects in the bucket.</li>
 <li>Access <strong>m7www</strong> bucket, select <strong>Permissions</strong> tab. Scroll down to <strong>Access control list (ACL)</strong>, click <strong>bucket owner enforced</strong>.</li>
 </ol>
-<p><img src="/images/2/18.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/18.png?width=90pc"></p>
 <ol start="7">
 <li>Select <strong>ACLs enabled</strong>, then click <strong>Save changes</strong></li>
 </ol>
-<p><img src="/images/2/19.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/19.png?width=90pc"></p>
 <ol start="8">
 <li>Select <strong>Objects</strong> tab, then select all objects. Then click <strong>Actions | Make public using ACL</strong></li>
 </ol>
-<p><img src="/images/2/20.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/20.png?width=90pc"></p>
 <ol start="9">
 <li>Visit the website with the following link:
-<code>https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html</code></li>
+<code> https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html </code></li>
 <li>You will see a landing page with four options. Click the first option, <strong>Object Scanner</strong></li>
 </ol>
-<p><img src="/images/2/21.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/21.png?width=90pc"></p>
 <ol start="11">
 <li>When the page loads, it will ask for permission to use the webcam on your computer. If you see an error instead, check that you are browsing to the site securely, using HTTPS.</li>
 <li>Select <strong>Start Rekognition</strong> button to start sending images to the Rekognition service.</li>
 </ol>
-<p><img src="/images/2/22.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/22.png?width=90pc"></p>
 <ol start="13">
 <li>The page will connect using Amazon Cognito, and then push the webcam image to Rekognition. In response, the page will show a list of all the objects it can ‘see’ in the image.</li>
 </ol>
-<p><img src="/images/2/23.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/23.png?width=90pc"></p>
 <ol start="14">
 <li>Try holding up different objects in front of the camera to see the list of objects detected change.</li>
 <li>Take a few minutes to look at the source code implementation of this demo to ensure you understand how it works.</li>
@@ -1331,19 +1331,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

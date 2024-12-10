@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Experimant With the People Finder Application :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -852,14 +852,14 @@
 <ol>
 <li>From the home page of the website, select <strong>People Finder - Master</strong></li>
 </ol>
-<p><img src="/images/2/27.png?width=90pc" alt="Recognise Master"></p>
+<p><img alt="Recognise Master" src="/images/2/27.png?width=90pc"></p>
 <ol start="2">
 <li>If you have already added faces to the collection, and you want to keep them, do not press the <strong>Clear Rekognition Collection</strong> button. If you want to erase all the known faces, click the button.</li>
 <li>You can add new faces to the collection using the <strong>Add face to Rekognition Collection</strong> panel. If you already have faces in the collection and don’t need to add more, you can skip that section.</li>
 <li>In the <strong>Faces detected</strong> section, click <strong>Start polling DynamoDB table</strong> to commence a timer that will query DynamoDB for results, and display them in a list.</li>
 <li>After a few seconds, the list will start to dynamically refresh. You will see the name, age, location and sentiment of each face, and when they were last detected. The location, sentiment and time detected will be invalid at this point, because you have not run the detector app yet.</li>
 </ol>
-<p><img src="/images/2/28.png?width=90pc" alt="Recognise Master"></p>
+<p><img alt="Recognise Master" src="/images/2/28.png?width=90pc"></p>
 <h4 id="implement-the-detector-processor-lambda-function">Implement the detector processor Lambda function</h4>
 <ol start="6">
 <li>Download the source code bundle from <strong>DetectorImageProcessor-Skeleton.zip</strong> and explode the zip file onto your filesystem.</li>
@@ -970,28 +970,28 @@
 <ol start="9">
 <li>Access to Lambda console, click <strong>Create Function</strong></li>
 </ol>
-<p><img src="/images/2/29.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/29.png?width=90pc"></p>
 <ol start="10">
 <li>Select <strong>Author from scratch</strong>, enter the <strong>DetectorImageProcessor</strong> for function name, select Runtime <strong>Java 8</strong></li>
 <li>Click <strong>Create function</strong></li>
 </ol>
-<p><img src="/images/2/30.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/30.png?width=90pc"></p>
 <ol start="12">
 <li>In Code tab, click <strong>Upload from|.zip file</strong></li>
 </ol>
-<p><img src="/images/2/31.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/31.png?width=90pc"></p>
 <ol start="13">
 <li>Select the <strong>DetectorImageProcessor-Full.zip</strong> file and click <strong>Save</strong></li>
 </ol>
-<p><img src="/images/2/32.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/32.png?width=90pc"></p>
 <ol start="14">
 <li>In <strong>Function overview</strong> section, click <strong>Add trigger</strong></li>
 </ol>
-<p><img src="/images/2/33.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/33.png?width=90pc"></p>
 <ol start="15">
 <li>Select <strong>S3</strong> and select <strong>facerecognitionS3bucket</strong> bucket</li>
 </ol>
-<p><img src="/images/2/34.png?width=90pc" alt="Lambda Function"></p>
+<p><img alt="Lambda Function" src="/images/2/34.png?width=90pc"></p>
 <h4 id="run-the-detector-page-to-detect-faces">Run the detector page to detect faces</h4>
 <ol start="16">
 <li>Go to the web page created in the previous steps, select <strong>People Finder - Detector</strong></li>
@@ -1019,12 +1019,12 @@
         &#34;MaxAgeSeconds&#34;: 3000
     }
 ]
-</code></pre><p><img src="/images/2/37.png?width=90pc" alt="CORS policy"></p>
+</code></pre><p><img alt="CORS policy" src="/images/2/37.png?width=90pc"></p>
 <ol start="19">
 <li>Click <strong>Start webcam</strong>. The page will start to send images to the S3 bucket, which will trigger the Lambda function to process the images using Rekognition, and update the DynamoDB table.</li>
 </ol>
-<p><img src="/images/2/35.png?width=90pc" alt="Lambda Function"></p>
-<p><img src="/images/2/36.png?width=90pc" alt="S3 bucket"></p>
+<p><img alt="Lambda Function" src="/images/2/35.png?width=90pc"></p>
+<p><img alt="S3 bucket" src="/images/2/36.png?width=90pc"></p>
 
 
 
@@ -1419,19 +1419,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

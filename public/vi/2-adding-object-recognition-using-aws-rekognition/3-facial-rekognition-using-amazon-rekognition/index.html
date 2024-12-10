@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Nhận diện khuôn mặt bằng Amazon Rekognition :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -855,12 +855,12 @@ Demo này hoạt động bằng cách cho phép thêm khuôn mặt vào bộ sư
 <li>Chọn <strong>Clear Rekognition Collection</strong> để thiết lập bộ sưu tập ban đầu.
 Bạn sẽ nhận được phản hồi như sau:</li>
 </ol>
-<p><img src="/images/2/24.png?width=90pc" alt="Clear Collection"></p>
+<p><img alt="Clear Collection" src="/images/2/24.png?width=90pc"></p>
 <ol start="3">
 <li>Nhập tên, quê quán và chọn động vật yêu thích của bạn từ danh sách.</li>
 <li>Chọn <strong>Start Webcam</strong></li>
 </ol>
-<p><img src="/images/2/25.png?width=90pc" alt="Add face"></p>
+<p><img alt="Add face" src="/images/2/25.png?width=90pc"></p>
 <ol start="5">
 <li>Định vị khuôn mặt của bạn trước máy ảnh để khuôn mặt của bạn được nhìn thấy rõ ràng và nhấp vào <strong>Add face to Rekognition Collection</strong></li>
 <li>Đoạn script trong trang sẽ hiển thị kết quả từ lời gọi tới lời gọi IndexFaces() và sau đó là kết quả của lời gọi thêm metadata tới DynamoDB table.</li>
@@ -874,7 +874,7 @@ Bạn sẽ nhận được phản hồi như sau:</li>
 <li>Cuộn xuống <strong>Recognise face</strong> và chọn <strong>Start webcam</strong></li>
 <li>Webcam sẽ bật và bắt đầu gửi hình ảnh định kỳ đến công cụ Rekognition và cố gắng nhận dạng khuôn mặt của bạn bằng cách so sánh với dữ liệu được lưu trữ trong bộ sưu tập. Định vị khuôn mặt của bạn để nó có thể nhìn thấy rõ ràng và sau một lúc, siêu dữ liệu về bạn sẽ được hiển thị trong các trường văn bản.</li>
 </ol>
-<p><img src="/images/2/26.png?width=90pc" alt="Recognise face"></p>
+<p><img alt="Recognise face" src="/images/2/26.png?width=90pc"></p>
 <ol start="10">
 <li>Thêm các khuôn mặt khác vào bộ sưu tập và thử phát hiện khuôn mặt họ.</li>
 <li>Bản demo này lưu trữ metadata bổ sung trong DynamoDB table. Bạn có thể truy cập DynamoDB và xem lại dữ liệu được lưu trữ trong table <strong>iDevelopKnownFaces</strong></li>
@@ -1274,19 +1274,19 @@ Bạn sẽ nhận được phản hồi như sau:</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

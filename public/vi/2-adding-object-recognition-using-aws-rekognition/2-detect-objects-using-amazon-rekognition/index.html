@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Phát hiện đối tượng bằng Amazon Rekognition :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -899,7 +899,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="/images/2/17.png?width=90pc" alt="Rekonition"></p>
+<p><img alt="Rekonition" src="/images/2/17.png?width=90pc"></p>
 <ol start="3">
 <li>Lưu tập tin</li>
 <li>Sao chép nội dung của thư mục đã giải nén vào S3 bucket</li>
@@ -909,30 +909,30 @@
 <li>Để có thể truy cập website, ta cần <strong>Make public with ACL</strong> các object có trong bucket.</li>
 <li>Truy cập bucket m7www, chọn tab <strong>Permissions</strong>. Kéo xuống mục <strong>Access control list (ACL)</strong>, ấn <strong>bucket owner enforced</strong>.</li>
 </ol>
-<p><img src="/images/2/18.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/18.png?width=90pc"></p>
 <ol start="7">
 <li>Chọn <strong>ACLs enabled</strong>, chọn tiếp <strong>Save changes</strong></li>
 </ol>
-<p><img src="/images/2/19.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/19.png?width=90pc"></p>
 <ol start="8">
 <li>Quay lại tab <strong>Objects</strong>, chọn tất cả các object. Sau đó ấn <strong>Actions | Make public with ACL</strong></li>
 </ol>
-<p><img src="/images/2/20.png?width=90pc" alt="Make public"></p>
+<p><img alt="Make public" src="/images/2/20.png?width=90pc"></p>
 <ol start="9">
 <li>Truy cập trang web với đường dẫn như sau:
-<code>https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html</code></li>
+<code> https://m7www.s3-&lt;region&gt;.amazonaws.com/index.html </code></li>
 <li>Bạn sẽ thấy một trang mới xuất hiện với 4 tùy chọn. Chọn vào tùy chọn đầu tiên <strong>Object Scanner</strong></li>
 </ol>
-<p><img src="/images/2/21.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/21.png?width=90pc"></p>
 <ol start="11">
 <li>Khi trang tải xong, bạn sẽ thấy thông báo yêu cầu quyền sử dụng webcam của máy tính của bạn. Nếu bạn thấy lỗi xuất hiện, kiểm tra lại xem bạn có đang duyệt trang web một cách an toàn bằng HTTPS hay không.</li>
 <li>Chọn <strong>Start Rekognition</strong> để bắt đầu gửi hình ảnh tới Rekognition service.</li>
 </ol>
-<p><img src="/images/2/22.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/22.png?width=90pc"></p>
 <ol start="13">
 <li>Trang sẽ kết nối bằng Amazon Cognito, sau đó đẩy hình ảnh từ webcam lên Rekognition. Trong trả về, trang sẽ hiển thị danh sách các đối tượng mà nó &rsquo;thấy&rsquo; trong hình ảnh.</li>
 </ol>
-<p><img src="/images/2/23.png?width=90pc" alt="Object scanner"></p>
+<p><img alt="Object scanner" src="/images/2/23.png?width=90pc"></p>
 <ol start="14">
 <li>Thử đưa các hình ảnh khác nhau lên trước camera để xem sự thay đổi của danh sách đối tượng.</li>
 <li>Hãy xem lại mã nguồn triển khai trong demo này để đảm bảo rằng bạn hiểu được cách thức hoạt động của nó.</li>
@@ -1331,19 +1331,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -4,6 +4,8 @@
     <title>Create A Lambda Handler For The Lex Bot on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
     <link>/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/</link>
     <description>Recent content in Create A Lambda Handler For The Lex Bot on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

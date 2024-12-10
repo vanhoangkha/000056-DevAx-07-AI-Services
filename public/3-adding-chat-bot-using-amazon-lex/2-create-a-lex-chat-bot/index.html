@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create a Lex Chat Bot For TravelBuddy :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -853,35 +853,35 @@
 <li>On the AWS Console in the browser, click Services and type lex and then press enter.</li>
 <li>Click <strong>Get Started</strong></li>
 </ol>
-<p><img src="/images/3/10.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/10.png?width=90pc"></p>
 <ol start="3">
 <li>Click <strong>Custom bot</strong></li>
 <li>For <strong>Bot name</strong> type <code>TravelBuddyChatBot</code></li>
 <li>In <strong>IAM Permissions</strong> section, select <strong>Create a role with basic Amazon Lex permissions.</strong></li>
 </ol>
-<p><img src="/images/3/11.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/11.png?width=90pc"></p>
 <ol start="6">
 <li>For <strong>COPPA</strong>* select <em>No</em></li>
 <li>For <strong>Session timeout</strong> type <code>5</code> and select <em>minutes</em></li>
 <li>Click <strong>Next</strong></li>
 </ol>
-<p><img src="/images/3/12.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/12.png?width=90pc"></p>
 <ol start="9">
 <li>For <strong>Language</strong> select <em>English (US)</em></li>
 <li>For <strong>Output Voice</strong> select <em>Joanna</em>. For <strong>Confidence score threshold</strong> leave the default value</li>
 <li>Click <strong>Done</strong> to create your new Lex bot</li>
 </ol>
-<p><img src="/images/3/13.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/13.png?width=90pc"></p>
 <ol start="12">
 <li>Give the new intent the name <strong>TravelBuddyCheckFlightsIntent</strong></li>
 <li>Click <strong>Save Intent</strong></li>
 </ol>
-<p><img src="/images/3/14.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/14.png?width=90pc"></p>
 <ol start="14">
 <li>For <strong>Sample utterances</strong> type <code>I would like to fly to {destinationCity}</code></li>
 <li>Click <strong>Add utterances</strong></li>
 </ol>
-<p><img src="/images/3/15.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/15.png?width=90pc"></p>
 <p>In this utterance, we have embedded a slot parameter called <strong>destinationCity</strong>. We now need to declare this slot name in the <strong>Slots</strong> section.</p>
 <ol start="16">
 <li>In the <strong>Slots</strong> section, click <strong>Add slot</strong>.</li>
@@ -889,7 +889,7 @@
 <li>For <strong>Slot type</strong> select <strong>AMAZON.City</strong>.</li>
 <li>For <strong>Prompt</strong> type <strong>What city would you like to fly to?</strong>. Then click <strong>Add</strong>.</li>
 </ol>
-<p><img src="/images/3/16.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/16.png?width=90pc"></p>
 <p>We now need to define a <strong>Confirmation</strong> which will be used to confirm with the user that they want to proceed with the fulfillment of the bot, once all the slots are filled.</p>
 <ol start="21">
 <li>Expand the <strong>Confirmation</strong> field and click to the <strong>Active</strong>.</li>
@@ -897,12 +897,12 @@
 <li>In <strong>Cancel</strong>, enter <code>No problem, you can try again later</code></li>
 <li>Click <strong>Save intent</strong></li>
 </ol>
-<p><img src="/images/3/17.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/17.png?width=90pc"></p>
 <h4 id="test-the-bot-in-the-browser">Test the bot in the browser</h4>
 <ol start="25">
 <li>At the top of the page, click <strong>Build</strong></li>
 </ol>
-<p><img src="/images/3/18.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/18.png?width=90pc"></p>
 <ol start="26">
 <li>Your bot will now be built and in a few moments, it will be ready to test.</li>
 <li>Click <strong>Test</strong> to test, enter <code>I would like to fly</code> into the <strong>Type a message</strong> field.</li>
@@ -910,11 +910,11 @@
 <li>The bot will respond <em>Are you sure you want to find flights to Sydney?</em>, type <code>Yes</code></li>
 <li>The bot will respond by returning the details of the intent and the slot values:</li>
 </ol>
-<p><img src="/images/3/19.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/19.png?width=90pc"></p>
 <ol start="31">
 <li>HTry a few other variations, for example <code>I want to go to Sydney</code>. If you try <code>I want to make a flight booking</code> you will notice that the bot doesn’t understand.</li>
 </ol>
-<p><img src="/images/3/20.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/20.png?width=90pc"></p>
 <ol start="32">
 <li>The request is too different from the single utterance you have defined. You can fix that by adding additional sample utterances. Add a few additional variations to your bot in the <strong>Sample utterances</strong> section, such as:
 <ul>
@@ -931,7 +931,7 @@
 <ol start="32">
 <li>Re-build your bot by clicking <strong>Build</strong> and once built, try testing the bot with the variations you have added as sample utterances.</li>
 </ol>
-<p><img src="/images/3/21.png?width=90pc" alt="Lex"></p>
+<p><img alt="Lex" src="/images/3/21.png?width=90pc"></p>
 
 
 
@@ -1326,19 +1326,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

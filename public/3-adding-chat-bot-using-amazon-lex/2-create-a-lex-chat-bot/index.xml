@@ -4,6 +4,8 @@
     <title>Create a Lex Chat Bot For TravelBuddy on DevAx - Monoliths to Microservices - Migrating the Monolith</title>
     <link>/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/</link>
     <description>Recent content in Create a Lex Chat Bot For TravelBuddy on DevAx - Monoliths to Microservices - Migrating the Monolith</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/3-adding-chat-bot-using-amazon-lex/2-create-a-lex-chat-bot/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

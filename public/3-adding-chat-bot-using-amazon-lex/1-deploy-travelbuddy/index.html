@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploy the Travellbuddy application and APIs :: DevAx - Monoliths to Microservices - Migrating the Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -876,11 +876,6 @@
 		
 		
 			
-		
-	
-		
-		
-			
 				<li>
 					<a href="/3-adding-chat-bot-using-amazon-lex/1-deploy-travelbuddy/_index.files/TravelBuddy.zip" >
 						TravelBuddy.zip
@@ -919,11 +914,6 @@
 		
 	
 	<div class="attachments-files">
-	
-		
-		
-			
-		
 	
 		
 		
@@ -977,7 +967,7 @@
 <li>DatabaseSubnet2</li>
 <li>RDSEndpoint</li>
 </ul>
-<p><img src="/images/3/1.png?width=90pc" alt="Update template"></p>
+<p><img alt="Update template" src="/images/3/1.png?width=90pc"></p>
 <ol start="5">
 <li>Save file.</li>
 <li>Use the AWS CLI to package the Lambda function (from the deployment artefact you just built). Run the following command from the commandline:</li>
@@ -989,7 +979,7 @@
 </ol>
 <pre tabindex="0"><code>aws cloudformation deploy --template-file template-export.yml --stack-name &lt;MICROSERVICE_NAME&gt; --capabilities CAPABILITY_IAM --profile aws-lab-env
 </code></pre><p>Thay thế &lt;MICROSERVICE_NAME&gt; bằng một tên phù hợp.</p>
-<p><img src="/images/3/2.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/2.png?width=90pc"></p>
 <ol start="8">
 <li>When the Change Set has been executed, your HotelSpecials and/or FlightSpecials API has been deployed, depending on which one you have completed - run the steps again for the other microservice</li>
 <li>Confirm the APIs are deployed by opening the API Gateway console, and testing the API calls by following the URL provided in the <strong>prod</strong> stage
@@ -1002,8 +992,8 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/3/3.png?width=90pc" alt="API Gateway"></p>
-<p><img src="/images/3/4.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/3.png?width=90pc"></p>
+<p><img alt="API Gateway" src="/images/3/4.png?width=90pc"></p>
 <p>Be sure to repeat this process for both the HotelSpecials and FlightSpecials microservices.</p>
 <h4 id="for-the-tripsearch-microservice-do-the-following">For the TripSearch microservice do the following:</h4>
 <ol start="10">
@@ -1019,11 +1009,6 @@
 		
 	
 	<div class="attachments-files">
-	
-		
-		
-			
-		
 	
 		
 		
@@ -1073,7 +1058,7 @@
 </code></pre><ol start="14">
 <li>When the Change Set has been executed, your TripSearch API has been deployed. Confirm the API is functioning correctly by opening the API Gateway console, and testing the API calls by following the URL provided in the <strong>prod</strong> stage, as you did for the previous microservices.</li>
 </ol>
-<p><img src="/images/3/5.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/5.png?width=90pc"></p>
 <h4 id="generate-sdks-for-the-microservices-and-update-the-spa-source-code">Generate SDKs for the microservices and update the SPA source code</h4>
 <p><strong>For each of the three APIs we have created, follow these instructions, using either the name TripSearch, HotelSpecials or FlightSpecials as appropriate. In the steps below, we refer to FlightSpecials - you need to use the right name for the API you are configuring:</strong></p>
 <ol start="15">
@@ -1083,14 +1068,14 @@
 <li>For <strong>Platform</strong>,choose <strong>Javascipt</strong></li>
 <li>Click <strong>Generate SDK</strong>. The Javascript SDK for the API will be downloaded by your browser.</li>
 </ol>
-<p><img src="/images/3/6.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/6.png?width=90pc"></p>
 <ol start="20">
 <li>Explode the downloaded ZIP file on your filesystem, and locate the file <strong>apigClient.js</strong></li>
 <li>Rename this file as <code>apigClient_FlightSpecials.js</code> (or <code>apigClient_HotelSpecials.js</code> / <code>apigClient_TripSearch.js</code>)</li>
 <li>Open the renamed file in your IDE as a text file.</li>
 <li>Search and Replace <code>apigClientFactory</code> with <code>apigClientFactory_FlightSpecials</code> (or <code>apigClientFactory_HotelSpecials</code> / <code>apigClientFactory_TripSearch</code>). There will be 2 occurrences to replace, both at the start of the file.</li>
 </ol>
-<p><img src="/images/3/7.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/7.png?width=90pc"></p>
 <ol start="24">
 <li>Save the file</li>
 <li>At the start of this task, you downloaded the <strong>TravelBuddy.zip</strong> bundle and exploded it on to your filesystem. Copy the re-named <em>apigClient_xxxxx.js</em> into the <em>/TravelBuddy/api/</em></li>
@@ -1150,7 +1135,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="/images/3/8.png?width=90pc" alt="API Gateway"></p>
+<p><img alt="API Gateway" src="/images/3/8.png?width=90pc"></p>
 <h4 id="triển-khai-tập-tin-travelbuddy-spa-lên-amazon-s3">Triển khai tập tin TravelBuddy SPA lên Amazon S3</h4>
 <p>With the API SDKs in place and the application configured to use the Amazon Cognito infrastructure, you are now ready to deploy the SPA code to the Amazon S3 Bucket that will serve the website. The lab setup process has provisioned a suitable S3 bucket, with WebSite Hosting enabled. So you will only need to push all the files from your local machine to the S3 bucket to be able to test the application.</p>
 <ol start="27">
@@ -1164,7 +1149,7 @@
 The familiar <em>TravelBuddy</em> website should render in your browser. You should see the Hotel Specials and Flight Specials listings rendered on the page, and the <strong>Find trips to…</strong> search option is also available. If you are not seeing the data as a result of the API calls, take a look at the developer console in the browser, to see if there are any errors that will help track down the issue.</li>
 </ol>
 <p>NThere is also a new option - Chat with us! This is the UI part of the chat bot that we will implement in the following exercises.</p>
-<p><img src="/images/3/9.png?width=90pc" alt="Web"></p>
+<p><img alt="Web" src="/images/3/9.png?width=90pc"></p>
 
 
 
@@ -1556,19 +1541,19 @@ The familiar <em>TravelBuddy</em> website should render in your browser. You sho
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

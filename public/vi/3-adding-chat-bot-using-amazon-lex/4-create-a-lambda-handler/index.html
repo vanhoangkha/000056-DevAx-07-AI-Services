@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo lamda handler cho bot lex :: DevAx - Chuyển đổi Monoliths sang Microservices - Chuyển đổi Ứng dụng Monolith</title>
 
     
-    <link href="/css/nucleus.css?1676256953" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676256953" rel="stylesheet">
-    <link href="/css/hybrid.css?1676256953" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676256953" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676256953" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676256953" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676256953" rel="stylesheet">
-    <link href="/css/theme.css?1676256953" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676256953" rel="stylesheet">
+    <link href="/css/nucleus.css?1733804640" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733804640" rel="stylesheet">
+    <link href="/css/hybrid.css?1733804640" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733804640" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733804640" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733804640" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733804640" rel="stylesheet">
+    <link href="/css/theme.css?1733804640" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733804640" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1676256953" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733804640" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676256953"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733804640"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676256953"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676256953"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733804640"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733804640"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676256953"></script>
+<script type="text/javascript" src="/js/search.js?1733804640"></script>
 
     
   </div>
@@ -751,7 +751,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>13-02-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
 </left>
 <left>
         <br>
@@ -851,7 +851,7 @@
 <li>Và chọn <strong>Existing role</strong> sau đó chọn <strong>LambdaRole</strong></li>
 <li>Chọn <strong>Create function</strong></li>
 </ol>
-<p><img src="/images/3/25.png?width=90pc" alt="Lambda"></p>
+<p><img alt="Lambda" src="/images/3/25.png?width=90pc"></p>
 <ol start="8">
 <li>Tải tập tin <strong>lambda-lexbothandler.js</strong> và sao chép nội dung của tập tin.</li>
 </ol>
@@ -872,7 +872,7 @@
 				<a href="/3-adding-chat-bot-using-amazon-lex/4-create-a-lambda-handler/_index.vi.files/lambda-lexbothandler.js" >
 					lambda-lexbothandler.js
 				</a>
-				(11 KB)
+				(12 KB)
 			</li>
 		
 	
@@ -885,7 +885,7 @@
 <li>Trong Lambda console, dán nội dung đã sao chép từ tập tin <strong>lambda-lexbothandler.js</strong> vào trường code entry, thay thế các nội dung đã có sẵn.</li>
 <li>Chọn <strong>Deploy</strong> và <strong>Test</strong></li>
 </ol>
-<p><img src="/images/3/26.png?width=90pc" alt="Lambda"></p>
+<p><img alt="Lambda" src="/images/3/26.png?width=90pc"></p>
 <ol start="11">
 <li>Hộp thoại <strong>Configure test event</strong> sẽ xuất hiện, nhập <strong>testcase</strong> cho tên của sự kiện kiểm tra này.</li>
 <li>Thay thế nội dung của test event bằng đoạn JSON sau đây:</li>
@@ -1007,12 +1007,12 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;0BTWXR7UVD&#34;</span>
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><img src="/images/3/27.png?width=90pc" alt="Lambda"></p>
+</span></span></code></pre></div><p><img alt="Lambda" src="/images/3/27.png?width=90pc"></p>
 <ol start="13">
 <li>Chọn <strong>Create</strong></li>
 <li>Chọn <strong>Test</strong> để kiểm tra hàm Lambda vừa tạo. Sau một khoảng thời gian, bạn sẽ nhận được kết quả như sau:</li>
 </ol>
-<p><img src="/images/3/28.png?width=90pc" alt="Lambda"></p>
+<p><img alt="Lambda" src="/images/3/28.png?width=90pc"></p>
 <p>Điều này cho thấy rằng hàm Lambda có thể đọc chính xác dữ liệu đầu vào và truy vấn bảng DynamoDB cho các chuyến bay từ Melbourne đến Sydney và trả về các kết quả phù hợp.</p>
 <ol start="16">
 <li>Hãy dành một vài phút để xem lại mã hàm Lambda này, để bạn hiểu nó hoạt động như thế nào.</li>
@@ -1411,19 +1411,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676256953"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676256953"></script>
-    <script src="/js/jquery.sticky.js?1676256953"></script>
-    <script src="/js/featherlight.min.js?1676256953"></script>
-    <script src="/js/highlight.pack.js?1676256953"></script>
+    <script src="/js/clipboard.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733804640"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733804640"></script>
+    <script src="/js/jquery.sticky.js?1733804640"></script>
+    <script src="/js/featherlight.min.js?1733804640"></script>
+    <script src="/js/highlight.pack.js?1733804640"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676256953"></script>
-    <script src="/js/learn.js?1676256953"></script>
-    <script src="/js/hugo-learn.js?1676256953"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733804640"></script>
+    <script src="/js/learn.js?1733804640"></script>
+    <script src="/js/hugo-learn.js?1733804640"></script>
 
-    <link href="/mermaid/mermaid.css?1676256953" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1676256953"></script>
+    <link href="/mermaid/mermaid.css?1733804640" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733804640"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
